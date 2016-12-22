@@ -98,7 +98,7 @@
 <meta property="og:image" content="http://oi6lwj85c.bkt.clouddn.com/static/images/lazy-dev.jpg">
 <meta property="og:image" content="http://oi6lwj85c.bkt.clouddn.com/static/images/lazy-serve-prod.jpg">
 <meta property="og:image" content="http://oi6lwj85c.bkt.clouddn.com/static/images/lazy-prod.jpg">
-<meta property="og:updated_time" content="2016-12-22T01:00:14.321Z">
+<meta property="og:updated_time" content="2016-12-22T01:07:22.075Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="[转载]Angular2路由教程3-子模块以及异步加载">
 <meta name="twitter:description" content="用Angular2开发一个大型的应用，我们通常都需要分模块进行开发。例如将某一个功能的相关页面和功能放在一个模块里面，这样既可以实现系统的松耦合，给开发和后期的维护带来很大的便利。同时，对于子模块，我们还可以使用延时加载，这样可以减少初始加载的文件的大小。在这篇文章中，我们就来看看在Angular2框架下怎么实现子模块及其延时加载。可以在这里查看本文使用的实例。该实例基于上篇文章Angular2路">
@@ -418,6 +418,9 @@
 <p>结果出乎意外，main文件的大小比上面在prod模式下运行测试服务器大很多，达到800多K。应该是编译过程需要某些参数，或者是当前的angular-cli有什么bug。<br>再使用ng build –prod –aot编译，main文件的大小是446K。虽然小了一点，但是也不符合预期。</p>
 <h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>先说延时加载，应该都知道可以减少第一次加载的文件的大小。特别是当某个模块使用了一些比较大第三方的js库，例如图形库等，那么，把这些模块独立出来，使用延时加载的方式，可以大大减少首次加载的时间。对于Angular2的应用来说，如果我们要定义Component，就从@angular/core里面引入Component，需要定义路由就从@angular/router里面引入`Router。所以，只要我们设计好了整个App的模块、组件、路由，我们就可以利用延时加载的功能使得首页文件尽可能的小。</p>
 <p>使用模块化的开发，也能给我们的开发和维护带来很大的便利，项目越大越大，模块化和组件化带来的便利就越明显。</p>
+<blockquote>
+<p>作者：codin.im<br>链接：<a href="http://codin.im/2016/12/08/angular2-route-3-sub-module-lazyload/" target="_blank" rel="external">http://codin.im/2016/12/08/angular2-route-3-sub-module-lazyload/</a><br>来源：个人博客</p>
+</blockquote>
 
       
     </div>
