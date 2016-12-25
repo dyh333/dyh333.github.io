@@ -439,7 +439,7 @@
 <p><em>401(Unauthorized)</em></p>
 <p>当前请求需要用户验证，响应中会包含一个WWW-Authenticate字段来询问用户的授权信息。 而客户端的下次请求需要提供包含Authorization头的请求。</p>
 <p>HTTP Basic Auth就是这样实现的。当服务器返回401时浏览器会弹出窗口：</p>
-<img title="basic-auth@2x" alt="basic-auth@2x" src="http://oi6lwj85c.bkt.clouddn.com/static/images/basic-auth@2x.png">
+<img title="basic-auth-2x" alt="basic-auth-2x" src="http://oi6lwj85c.bkt.clouddn.com/static/images/basic-auth-2x.png">
 <p>输入验证信息并点击确定，浏览器会根据你的输入填写Authorization头并重新发送请求。对于Basic Auth看起来是这样的：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Authorization:Basic eWFuZ2p2bjp5YW5nanZuaGFydA==</div></pre></td></tr></table></figure>
 <p><em>403(Forbidden)</em></p>
@@ -479,9 +479,8 @@
 <li>415(Unsupported Media Type)</li>
 <li>416(Requested range not satisfiable)</li>
 <li>417(Expectation Failed)</li>
-<li>5xx</li>
 </ul>
-<p>这类状态码代表了服务器在处理请求的过程中有错误或者异常状态发生，也有可能是服务器意识到以当前的软硬件资源无法完成对请求的处理。 并且响应消息体中应当给出理由，除非是HEAD请求。</p>
+<h3 id="5xx"><a href="#5xx" class="headerlink" title="5xx"></a>5xx</h3><p>这类状态码代表了服务器在处理请求的过程中有错误或者异常状态发生，也有可能是服务器意识到以当前的软硬件资源无法完成对请求的处理。 并且响应消息体中应当给出理由，除非是HEAD请求。</p>
 <p><em>500(Internal Server Error)</em></p>
 <p>通常是代码出错，后台Bug。一般的Web服务器通常会给出抛出异常的调用堆栈。 然而多数服务器即使在生产环境也会打出调用堆栈，这显然是不安全的。</p>
 <p><em>502(Bad Gateway)</em></p>

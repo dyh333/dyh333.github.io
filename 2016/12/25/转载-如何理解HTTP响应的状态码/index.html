@@ -96,13 +96,13 @@ HTTP状态码分为5类：1xx表示继续发送请求；2xx表示请求成功；
 <meta property="og:site_name" content="飞鸿雪泥之地">
 <meta property="og:description" content="我们知道HTTP协议是通过HTTP请求和HTTP响应来实现双向通信的。 HTTP状态码(HTTP Status Code)是用以表示Web服务器HTTP响应状态的3位数字代码，由RFC 2616规范定义。 合理的状态码不仅可以让用户或者浏览器做出更加合适的进一步操作，而且可以让客户端代码更加易于理解和维护。
 HTTP状态码分为5类：1xx表示继续发送请求；2xx表示请求成功；3xx表示资源已找到但">
-<meta property="og:image" content="http://oi6lwj85c.bkt.clouddn.com/static/images/basic-auth@2x.png">
-<meta property="og:updated_time" content="2016-12-25T12:50:52.961Z">
+<meta property="og:image" content="http://oi6lwj85c.bkt.clouddn.com/static/images/basic-auth-2x.png">
+<meta property="og:updated_time" content="2016-12-25T13:02:53.684Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="[转载]如何理解HTTP响应的状态码">
 <meta name="twitter:description" content="我们知道HTTP协议是通过HTTP请求和HTTP响应来实现双向通信的。 HTTP状态码(HTTP Status Code)是用以表示Web服务器HTTP响应状态的3位数字代码，由RFC 2616规范定义。 合理的状态码不仅可以让用户或者浏览器做出更加合适的进一步操作，而且可以让客户端代码更加易于理解和维护。
 HTTP状态码分为5类：1xx表示继续发送请求；2xx表示请求成功；3xx表示资源已找到但">
-<meta name="twitter:image" content="http://oi6lwj85c.bkt.clouddn.com/static/images/basic-auth@2x.png">
+<meta name="twitter:image" content="http://oi6lwj85c.bkt.clouddn.com/static/images/basic-auth-2x.png">
 
 
 
@@ -438,7 +438,7 @@ HTTP状态码分为5类：1xx表示继续发送请求；2xx表示请求成功；
 <p><em>401(Unauthorized)</em></p>
 <p>当前请求需要用户验证，响应中会包含一个WWW-Authenticate字段来询问用户的授权信息。 而客户端的下次请求需要提供包含Authorization头的请求。</p>
 <p>HTTP Basic Auth就是这样实现的。当服务器返回401时浏览器会弹出窗口：</p>
-<img title="basic-auth@2x" alt="basic-auth@2x" src="http://oi6lwj85c.bkt.clouddn.com/static/images/basic-auth@2x.png">
+<img title="basic-auth-2x" alt="basic-auth-2x" src="http://oi6lwj85c.bkt.clouddn.com/static/images/basic-auth-2x.png">
 <p>输入验证信息并点击确定，浏览器会根据你的输入填写Authorization头并重新发送请求。对于Basic Auth看起来是这样的：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Authorization:Basic eWFuZ2p2bjp5YW5nanZuaGFydA==</div></pre></td></tr></table></figure>
 <p><em>403(Forbidden)</em></p>
@@ -478,9 +478,8 @@ HTTP状态码分为5类：1xx表示继续发送请求；2xx表示请求成功；
 <li>415(Unsupported Media Type)</li>
 <li>416(Requested range not satisfiable)</li>
 <li>417(Expectation Failed)</li>
-<li>5xx</li>
 </ul>
-<p>这类状态码代表了服务器在处理请求的过程中有错误或者异常状态发生，也有可能是服务器意识到以当前的软硬件资源无法完成对请求的处理。 并且响应消息体中应当给出理由，除非是HEAD请求。</p>
+<h3 id="5xx"><a href="#5xx" class="headerlink" title="5xx"></a>5xx</h3><p>这类状态码代表了服务器在处理请求的过程中有错误或者异常状态发生，也有可能是服务器意识到以当前的软硬件资源无法完成对请求的处理。 并且响应消息体中应当给出理由，除非是HEAD请求。</p>
 <p><em>500(Internal Server Error)</em></p>
 <p>通常是代码出错，后台Bug。一般的Web服务器通常会给出抛出异常的调用堆栈。 然而多数服务器即使在生产环境也会打出调用堆栈，这显然是不安全的。</p>
 <p><em>502(Bad Gateway)</em></p>
@@ -681,7 +680,7 @@ HTTP状态码分为5类：1xx表示继续发送请求；2xx表示请求成功；
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1xx"><span class="nav-number">1.</span> <span class="nav-text">1xx</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2xx"><span class="nav-number">2.</span> <span class="nav-text">2xx</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3xx"><span class="nav-number">3.</span> <span class="nav-text">3xx</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#关于HTTP缓存的讨论"><span class="nav-number">3.1.</span> <span class="nav-text">关于HTTP缓存的讨论</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4xx"><span class="nav-number">4.</span> <span class="nav-text">4xx</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1xx"><span class="nav-number">1.</span> <span class="nav-text">1xx</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2xx"><span class="nav-number">2.</span> <span class="nav-text">2xx</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3xx"><span class="nav-number">3.</span> <span class="nav-text">3xx</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#关于HTTP缓存的讨论"><span class="nav-number">3.1.</span> <span class="nav-text">关于HTTP缓存的讨论</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4xx"><span class="nav-number">4.</span> <span class="nav-text">4xx</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5xx"><span class="nav-number">5.</span> <span class="nav-text">5xx</span></a></li></ol></div>
             
 
           </div>
