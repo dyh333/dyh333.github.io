@@ -98,7 +98,7 @@
 <meta property="og:image" content="http://oi6lwj85c.bkt.clouddn.com/static/images/lazy-dev.jpg">
 <meta property="og:image" content="http://oi6lwj85c.bkt.clouddn.com/static/images/lazy-serve-prod.jpg">
 <meta property="og:image" content="http://oi6lwj85c.bkt.clouddn.com/static/images/lazy-prod.jpg">
-<meta property="og:updated_time" content="2016-12-22T01:07:22.075Z">
+<meta property="og:updated_time" content="2016-12-22T02:09:10.199Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="[转载]Angular2路由教程3-子模块以及异步加载">
 <meta name="twitter:description" content="用Angular2开发一个大型的应用，我们通常都需要分模块进行开发。例如将某一个功能的相关页面和功能放在一个模块里面，这样既可以实现系统的松耦合，给开发和后期的维护带来很大的便利。同时，对于子模块，我们还可以使用延时加载，这样可以减少初始加载的文件的大小。在这篇文章中，我们就来看看在Angular2框架下怎么实现子模块及其延时加载。可以在这里查看本文使用的实例。该实例基于上篇文章Angular2路">
@@ -378,7 +378,7 @@
 <p>为了体现启用延时加载前后的包的大小变化，以及启用压缩后的变化，在这个教程里面，使用了angular-cli创建项目脚手架，并用它来进行测试和打包。有关angular-cli的使用请查看官网。在这篇文章我们使用的angular-cli的版本是1.0.0-beta.21。如果你使用的是别的版本，可能结果就会不一样。甚至有些错误，我们在最后会说明当前版本angular-cli的bug。</p>
 <h3 id="模块设计"><a href="#模块设计" class="headerlink" title="模块设计"></a>模块设计</h3><p>在开发Angular2应用时，除了之前(Angular2入门教程-2 实现TodoList App)讲到的设计方法，像组件设计、路由设计以外，对于一个较大型的应用，我们还需要设计模块。例如，将一个应用分成几个功能模块，以及有哪些公用模块。公用模块里面应该放公用的service类，例如权限验证、登录、获取用户信息、全局的错误处理、工具类等，还有封装的指令或组件。而在某一个功能模块里面，只处理这个模块里面的业务，尽量不和其他模块交互。<br>拿之前教程中的TodoList应用来说，只有home页面和2个todo页面，我们把todo相关的功能放在一个子模块里面，为了演示，又加了一个简单的名字叫lazy的模块。我们将把todo模块和lazy模块配置成延时加载的模块。</p>
 <h3 id="子模块开发"><a href="#子模块开发" class="headerlink" title="子模块开发"></a>子模块开发</h3><p>接下来再看看子模块的开发。其实在之前的例子中，就把todo相关的组件放在了一个模块里面。但是却没有强调子模块开发需要注意的地方，甚至有些配置可能没有采用子模块的方式进行配置。这里，我们就主要说明一下需要注意的地方，如果要查看完整的代码，请参考实例源代码。</p>
-<h3 id="子模块路由"><a href="#子模块路由" class="headerlink" title="子模块路由"></a>子模块路由</h3><p>首先需要注意的是路由。在之前的例子中，我们把todo相关的路由定义在一个文件中，然后在app的路由定义中把所有路由合并到一起。todo.routes.ts的内容如下：</p>
+<h4 id="子模块路由"><a href="#子模块路由" class="headerlink" title="子模块路由"></a>子模块路由</h4><p>首先需要注意的是路由。在之前的例子中，我们把todo相关的路由定义在一个文件中，然后在app的路由定义中把所有路由合并到一起。todo.routes.ts的内容如下：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">// 省略import</div><div class="line">export const TodoRoutes: Route[] = [</div><div class="line">    &#123;</div><div class="line">        path: &apos;todo&apos;,</div><div class="line">        canActivateChild: [MyTodoGuard],</div><div class="line">        children: [</div><div class="line">            &#123; path: &apos;list&apos;, component: TodoListComponent, resolve: &#123; todos: MyTodoResolver &#125; &#125;,</div><div class="line">            &#123; path: &apos;detail/:id&apos;, component: TodoDetailComponent, canDeactivate: [ CanLeaveTodoDetailGuard ] &#125;</div><div class="line">        ]</div><div class="line">    &#125;</div><div class="line">];</div></pre></td></tr></table></figure>
 <p>然后在app.routes.ts中定义一个路由模块：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">const routes: Routes = [</div><div class="line">    &#123; path: &apos;&apos;, redirectTo: &apos;/home&apos;, pathMatch: &apos;full&apos; &#125;,</div><div class="line">    &#123; path: &apos;home&apos;, component: HomeComponent &#125;,</div><div class="line">    ...TodoRoutes // 这里就是将TodoRoutes列表里的内容合并到routes</div><div class="line">];</div><div class="line">@NgModule(&#123;</div><div class="line">  imports: [ RouterModule.forRoot(routes) ],</div><div class="line">  exports: [ RouterModule ]</div><div class="line">&#125;)</div><div class="line">export class AppRoutingModule &#123; &#125;</div></pre></td></tr></table></figure>
@@ -389,10 +389,10 @@
 <p>定义好了子路由模块，我们就在子模块里面引入它既可：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">// 省略import</div><div class="line">@NgModule(&#123;</div><div class="line">  imports: [CommonModule, FormsModule, TodoRoutingModule ],</div><div class="line">  declarations: [TodoListComponent, TodoDetailComponent, TodoItemComponent],</div><div class="line">  providers: [TodoService, MyTodoResolver, MyTodoGuard, CanLeaveTodoDetailGuard]</div><div class="line">&#125;)</div><div class="line">export class TodoModule &#123;&#125;</div></pre></td></tr></table></figure>
 <p>这样，我们就定义好了一个子模块。当用户打开/todo/list或/todo/detail/*时，这个子模块里面的相关页面就会展示，它也不会跟其他模块有任何交互。也就是说，进入和离开这个子模块，都是通过路由跳转实现。这个子模块也是完全独立的，可以独立开发，也可以很容易就用到其他应用里面。</p>
-<h3 id="延时加载子模块"><a href="#延时加载子模块" class="headerlink" title="延时加载子模块"></a>延时加载子模块</h3><p>下面，我们就可以通过修改路由的配置，使得todo模块实现延时加载。Angular的路由模块已经提供了loadChildren定义可以直接帮我们实现该功能。下面就是新的app路由定义：</p>
+<h4 id="延时加载子模块"><a href="#延时加载子模块" class="headerlink" title="延时加载子模块"></a>延时加载子模块</h4><p>下面，我们就可以通过修改路由的配置，使得todo模块实现延时加载。Angular的路由模块已经提供了loadChildren定义可以直接帮我们实现该功能。下面就是新的app路由定义：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">const routes: Routes = [</div><div class="line">    &#123; path: &apos;&apos;, redirectTo: &apos;/home&apos;, pathMatch: &apos;full&apos; &#125;,</div><div class="line">    &#123; path: &apos;home&apos;, component: HomeComponent &#125;,</div><div class="line">    &#123; path: &apos;todo&apos;, loadChildren: &apos;app/todo/todo.module#TodoModule&apos; &#125;,</div><div class="line">    &#123; path: &apos;lazy&apos;, loadChildren: &apos;app/lazy/lazy.module#LazyModule&apos; &#125;</div><div class="line">];</div><div class="line">@NgModule(&#123;</div><div class="line">  imports: [ RouterModule.forRoot(routes) ],</div><div class="line">  exports: [ RouterModule ]</div><div class="line">&#125;)</div><div class="line">export class AppRoutingModule &#123; &#125;</div></pre></td></tr></table></figure>
 <p>在这里，我们对于todo路径，交给app/todo/todo.module里面的TodoModule模块处理。而在TodoModule模块里，已经有一个子路由的定义。</p>
-<p>最后，再修改app.module.ts，保证它里面不再引入TodoModule。如此一来，我们在主模块AppModule里面，没有引入todo模块的任何组件或服务。这样就能在完全脱离TodoModule模块的情况下，运行主模块的功能。当用户打开/todo里面的url时，就加载app/lazy/lazy.module里面的LazyModule模块，并交由它来处理响应的url。</p>
+<p>最后，再修改app.module.ts，保证它里面不再引入TodoModule。如此一来，我们在主模块AppModule里面，没有引入todo模块的任何组件或服务。这样就能在完全脱离TodoModule模块的情况下，运行主模块的功能。当用户打开/todo里面的url时，就加载app/todo/todo.module里面的TodoModule模块，并交由它来处理响应的url。</p>
 <p>总结一下，实现延时加载子模块，主要是要注意下面几点：</p>
 <ul>
 <li>子模块的路由用RouterModule.forChild(TodoRoutes)方式定义。</li>
@@ -400,20 +400,19 @@
 <li>只有子模块才会用到的Service在子模块的providers里面定义，如果是主模块和子模块都会用到的Service就用公用模块的方式定义。要注意这个Service的实例只能有一个。</li>
 </ul>
 <h3 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h3><p>接下来我们来看看运行的结果。（注意根据运行环境不同，文件大小会不一样）</p>
-<p>不启用延时加载</p>
-<p>首先，我们在app.module.ts引入TodoModule，这样todo模块不是延时加载的，只有lazy模块是延时加载的。我们使用ng serve的方式运行测试服务器，并打开页面，打开几个页面以后，网络请求如下：</p>
+<h4 id="不启用延时加载"><a href="#不启用延时加载" class="headerlink" title="不启用延时加载"></a>不启用延时加载</h4><p>首先，我们在app.module.ts引入TodoModule，这样todo模块不是延时加载的，只有lazy模块是延时加载的。我们使用ng serve的方式运行测试服务器，并打开页面，打开几个页面以后，网络请求如下：</p>
 <img title="lazy-dev-no" alt="lazy-dev-no" src="http://oi6lwj85c.bkt.clouddn.com/static/images/lazy-dev-no.jpg">
 <p>从图中可以看到，有一个3.4M的main的js文件，下面的1.chunk.js的lazy模块延时加载的。打包的文件确实是非常的大，因为lazy模块非常简单，只是显示了一个字符串在模板里。所以它的大小也非常小，才5.8k。</p>
-<h3 id="延时加载模式"><a href="#延时加载模式" class="headerlink" title="延时加载模式"></a>延时加载模式</h3><p>下面在把TodoModule模块从app.module.ts去掉，这样，todo模块就是延时加载的，再看一下网络请求：</p>
+<h4 id="延时加载模式"><a href="#延时加载模式" class="headerlink" title="延时加载模式"></a>延时加载模式</h4><p>下面在把TodoModule模块从app.module.ts去掉，这样，todo模块就是延时加载的，再看一下网络请求：</p>
 <img title="lazy-dev" alt="lazy-dev" src="http://oi6lwj85c.bkt.clouddn.com/static/images/lazy-dev.jpg">
 <p>这下main文件变成了3.1M，lazy模块对应的js文件是1.chunk.js，还是5.8k，todo模块对应的文件0.chunk.js是324K。可以看见一个很简单的todo模块，里面有service, rosolver, guards, 还有3个组件，里面分别都有模块、css，虽然文件不少，但是他们的实现实际上都很小。只是一个模块的文件，在未压缩的情况下就有300多K，让我这个Angular2的忠实粉丝都无语。</p>
-<h3 id="延时加载-prod模式"><a href="#延时加载-prod模式" class="headerlink" title="延时加载-prod模式"></a>延时加载-prod模式</h3><p>一般我们在部署应用的时候，都会使用压缩、混淆、合并等方法来减少最终文件的大小。使用angular-cli工具，除了在编译的时候提供打包的功能，甚至在测试的时候，也可以启用压缩选项。我们可以运行ng serve -pro来使用prod模式来启动测试服务器。在启动的过程中，可以看到很多类似下面的日志：</p>
+<h4 id="延时加载-prod模式"><a href="#延时加载-prod模式" class="headerlink" title="延时加载-prod模式"></a>延时加载-prod模式</h4><p>一般我们在部署应用的时候，都会使用压缩、混淆、合并等方法来减少最终文件的大小。使用angular-cli工具，除了在编译的时候提供打包的功能，甚至在测试的时候，也可以启用压缩选项。我们可以运行ng serve -pro来使用prod模式来启动测试服务器。在启动的过程中，可以看到很多类似下面的日志：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">WARNING in 0.005fea95566fdabe23df.chunk.js from UglifyJs</div><div class="line">Dropping unused function scheduleMicroTask [/Users/mavlarn/mydev/blog/angular2-tutorial/angular2-routes-lazy-module-webpack/~/@angular/forms/src/facade/lang.js:21,0]</div></pre></td></tr></table></figure>
-<p>可以看出，angular-cli的prod模式下编译的时候，去除了很多不需要的代码，这就是angular的Tree Shaking的功能。</p>
+<p>可以看出，angular-cli的prod模式下编译的时候，去除了很多不需要的代码，这就是angular的<a href="https://angular.cn/docs/ts/latest/cookbook/aot-compiler.html#!#sts=Tree Shaking" target="_blank" rel="external">Tree Shaking</a>的功能。</p>
 <p>运行以后，网络请求如下：</p>
 <img title="lazy-serve-prod" alt="lazy-serve-prod" src="http://oi6lwj85c.bkt.clouddn.com/static/images/lazy-serve-prod.jpg">
 <p>这下main文件减少到了221K，lazy模块对应的js文件是1.chunk.js，只有1.0k，todo模块对应的文件0.chunk.js是17.9K。总共大小大概是240K左右，如果再使用GZip压缩，应该可以到6，70K左右。在官方文档里提到，一个Angular2的简单实例，通过Tree Shaking、压缩、GZip，最终下载的包大小有50K。我们这个实例毕竟稍微复杂，实现了大多数的通用功能，如路由、guard、resolver、表单，也是用到了Rxjs里的Observable，所以最终压缩后能有70K左右的话，也符合官方文档的说法。</p>
-<h3 id="编译后"><a href="#编译后" class="headerlink" title="编译后"></a>编译后</h3><p>最后，我们再使用ng build –prod来看看用prod模式编译后的大小：</p>
+<h4 id="编译后"><a href="#编译后" class="headerlink" title="编译后"></a>编译后</h4><p>最后，我们再使用ng build –prod来看看用prod模式编译后的大小：</p>
 <img title="lazy-prod" alt="lazy-prod" src="http://oi6lwj85c.bkt.clouddn.com/static/images/lazy-prod.jpg">
 <p>结果出乎意外，main文件的大小比上面在prod模式下运行测试服务器大很多，达到800多K。应该是编译过程需要某些参数，或者是当前的angular-cli有什么bug。<br>再使用ng build –prod –aot编译，main文件的大小是446K。虽然小了一点，但是也不符合预期。</p>
 <h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>先说延时加载，应该都知道可以减少第一次加载的文件的大小。特别是当某个模块使用了一些比较大第三方的js库，例如图形库等，那么，把这些模块独立出来，使用延时加载的方式，可以大大减少首次加载的时间。对于Angular2的应用来说，如果我们要定义Component，就从@angular/core里面引入Component，需要定义路由就从@angular/router里面引入`Router。所以，只要我们设计好了整个App的模块、组件、路由，我们就可以利用延时加载的功能使得首页文件尽可能的小。</p>
@@ -462,6 +461,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/12/25/转载-如何理解HTTP响应的状态码/" rel="prev" title="[转载]如何理解HTTP响应的状态码">
+                [转载]如何理解HTTP响应的状态码 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -533,7 +536,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-count">5</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -550,7 +553,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -605,7 +608,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#模块设计"><span class="nav-number">1.</span> <span class="nav-text">模块设计</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#子模块开发"><span class="nav-number">2.</span> <span class="nav-text">子模块开发</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#子模块路由"><span class="nav-number">3.</span> <span class="nav-text">子模块路由</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#延时加载子模块"><span class="nav-number">4.</span> <span class="nav-text">延时加载子模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#运行"><span class="nav-number">5.</span> <span class="nav-text">运行</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#延时加载模式"><span class="nav-number">6.</span> <span class="nav-text">延时加载模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#延时加载-prod模式"><span class="nav-number">7.</span> <span class="nav-text">延时加载-prod模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#编译后"><span class="nav-number">8.</span> <span class="nav-text">编译后</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#总结"><span class="nav-number">9.</span> <span class="nav-text">总结</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#模块设计"><span class="nav-number">1.</span> <span class="nav-text">模块设计</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#子模块开发"><span class="nav-number">2.</span> <span class="nav-text">子模块开发</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#子模块路由"><span class="nav-number">2.1.</span> <span class="nav-text">子模块路由</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#延时加载子模块"><span class="nav-number">2.2.</span> <span class="nav-text">延时加载子模块</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#运行"><span class="nav-number">3.</span> <span class="nav-text">运行</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#不启用延时加载"><span class="nav-number">3.1.</span> <span class="nav-text">不启用延时加载</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#延时加载模式"><span class="nav-number">3.2.</span> <span class="nav-text">延时加载模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#延时加载-prod模式"><span class="nav-number">3.3.</span> <span class="nav-text">延时加载-prod模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#编译后"><span class="nav-number">3.4.</span> <span class="nav-text">编译后</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#总结"><span class="nav-number">4.</span> <span class="nav-text">总结</span></a></li></ol></div>
             
 
           </div>

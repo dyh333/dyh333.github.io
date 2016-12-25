@@ -272,6 +272,270 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/12/25/转载-如何理解HTTP响应的状态码/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="dingyh">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/uploads/avatar.png">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="飞鸿雪泥之地">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="飞鸿雪泥之地" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/12/25/转载-如何理解HTTP响应的状态码/" itemprop="url">
+                  [转载]如何理解HTTP响应的状态码
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-12-25T19:40:18+08:00">
+                2016-12-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/它山之石/" itemprop="url" rel="index">
+                    <span itemprop="name">它山之石</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <a href="/2016/12/25/转载-如何理解HTTP响应的状态码/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/25/转载-如何理解HTTP响应的状态码/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>我们知道HTTP协议是通过HTTP请求和HTTP响应来实现双向通信的。 HTTP状态码(HTTP Status Code)是用以表示Web服务器HTTP响应状态的3位数字代码，由RFC 2616规范定义。 合理的状态码不仅可以让用户或者浏览器做出更加合适的进一步操作，而且可以让客户端代码更加易于理解和维护。</p>
+<p>HTTP状态码分为5类：1xx表示继续发送请求；2xx表示请求成功；3xx表示资源已找到但需要继续进行其他操作； 4xx表示客户端错误；5xx表示服务器错误。下面就具体详述常见状态码的语义，及其使用方式。</p>
+<blockquote>
+<p>关于HTTP协议规范以及状态码在其中的作用，参见：<a href="http://harttle.com/2014/10/01/http.html" title="读 HTTP 协议" target="_blank" rel="external">读 HTTP 协议</a>。</p>
+</blockquote>
+<h3 id="1xx"><a href="#1xx" class="headerlink" title="1xx"></a>1xx</h3><p>1xx表示请求已被接受，但需要后续处理。例如：</p>
+<p><em>100(Continue)</em></p>
+<p>客户端应继续发送请求。</p>
+<p><em>101(Switching Protocols)</em></p>
+<p>需要切换协议，服务器通过的Upgrade响应头字段通知客户端。</p>
+<p>HTML5引入的WebSocket便是这样工作的。首先客户端请求websocket所在的URL，服务器返回101，然后便建立了全双工的TCP连接。 注意Upgrade和Connection头字段属于Hop-by-hop字段，设置Websocket代理时需要继续设置这两个字段，而不是简单地转发请求。</p>
+<h3 id="2xx"><a href="#2xx" class="headerlink" title="2xx"></a>2xx</h3><p>请求已成功被服务器接收、理解、并接受。</p>
+<p><em>200(OK)</em></p>
+<p>请求已成功，请求所希望的响应头或数据体将随此响应返回。</p>
+<p><em>201(Created)</em></p>
+<p>请求已经被实现，而且有一个新的资源已经依据请求的需要而创建。在RESTFul风格的URL设计中，通常用来响应POST请求。</p>
+<p><em>202(Accepted)</em></p>
+<p>服务器已接受请求，但尚未处理。比如POST一个资源应当返回201，但由于性能原因未能立即创建，可以返回202。</p>
+<p><em>204(No Content)</em></p>
+<p>服务器成功处理了请求，但不需要返回任何实体内容，204响应禁止包含任何消息体。浏览器收到该响应后不应产生文档视图的变化。</p>
+<p><em>205(Reset Content)</em></p>
+<p>服务器成功处理了请求，但不需要返回任何实体内容，205响应禁止包含任何消息体。 与204不同的是，返回此状态码的响应要求请求者重置文档视图。比如用户刚刚提交一个表单，返回205后页面重置，用户可以立即填写下一个表单。</p>
+<p><em>206(Partial Content)</em></p>
+<p>HTTP协议允许分片传输。请求头中包含Range字段时，响应需要只返回Range指定的那一段。响应中应包含Content-Range来指示返回内容的范围。</p>
+<p><em>其他</em></p>
+<ul>
+<li>203(Non-Authoritative Information)</li>
+<li>207(Multi-Status)</li>
+</ul>
+<h3 id="3xx"><a href="#3xx" class="headerlink" title="3xx"></a>3xx</h3><p>这类状态码代表需要客户端采取进一步的操作才能完成请求。通常，这些状态码用来重定向， 重定向目标在本次响应的Location头字段中指明。</p>
+<p><em>301(Moved Permanently)</em></p>
+<p>被请求的资源已永久移动到新位置，并且将来任何对此资源的引用都应该使用本响应返回的若干个URI之一。如果该请求不是GET/HEAD， 浏览器通常会要求用户确认重定向。</p>
+<p>301通常用于网站迁移时，服务器对旧的URL进行301重定向到新的URL。这样搜索引擎可以正确地更新原有的页面排名等信息。</p>
+<p><em>302(Found)</em></p>
+<p>请求的资源现在临时从不同的URI响应请求。除非指定了Cache-Control或Expires，否则该响应不可缓存。 如果当前请求非HEAD或GET，浏览器需取得用户确认，再进行重定向。</p>
+<blockquote>
+<p>这很好理解，因为上下文发生了变化，比如POST请求不是幂等的。</p>
+</blockquote>
+<p><em>303(See Other)</em></p>
+<p>对应当前请求的响应可以在另一个URI上被找到，而且客户端应当采用GET的方式访问那个资源。 这个方法的存在主要是为了允许由脚本激活的POST请求输出重定向到一个新的资源。 303响应禁止被缓存。</p>
+<blockquote>
+<p>303会使得浏览器直接GET那个资源，不需用户同意。这是Web应用中最常见的重定向方式。</p>
+</blockquote>
+<p><em>304(Not Modified)</em></p>
+<p>如果客户端发送了一个带条件的GET请求且该请求已被允许，而文档的内容(自上次访问以来或者根据请求的条件)并没有改变。 304响应禁止包含消息体。</p>
+<p>304响应也是一种缓存机制。Web服务器对静态资源文件通常会采取缓存，因此在Web开发中你可以看到大量的304响应。 服务器给出的相应中通常会包含Etag来标识资源ID，比如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ETag: &quot;686897696a7c876b7e&quot;</div></pre></td></tr></table></figure>
+<p>客户端在下次访问同一URL时会设置头字段If-None-Match(这是一个请求条件)：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">If-None-Match: &quot;686897696a7c876b7e&quot;</div></pre></td></tr></table></figure>
+<p>服务器返回资源前会判断Etag是否与客户端提供的If-None-Match匹配，如果匹配则说明资源未发生改变，此时应返回304。</p>
+<h4 id="关于HTTP缓存的讨论"><a href="#关于HTTP缓存的讨论" class="headerlink" title="关于HTTP缓存的讨论"></a>关于HTTP缓存的讨论</h4><p>除了使用ETag/If-None-Match/If-Match通过文件内容来缓存外，还可以使用Last-Modified/If-Modified-Since通过文件修改时间来进行缓存。 这两者都需要客户端再次发送HTTP请求，如果文件未发生改变，服务器返回304。</p>
+<p>而另外一种缓存策略Expires/Cache-Control则可以让客户端避免再次发送请求。一般会优先使用Cache-Control，它能够更加精细地控制缓存策略。</p>
+<p><em>其他</em></p>
+<ul>
+<li>300(Multiple Choices)</li>
+<li>305(Use Proxy)</li>
+<li>307(Temporary Redirect)</li>
+</ul>
+<h3 id="4xx"><a href="#4xx" class="headerlink" title="4xx"></a>4xx</h3><p>这类的状态码代表了客户端看起来可能发生了错误，妨碍了服务器的处理。 除非响应的是一个HEAD请求，否则服务器就应该返回一个解释当前错误状况的实体。</p>
+<p><em>400(Bad Request)</em></p>
+<p>由于包含语法错误，当前请求无法被服务器理解。400通常在服务器端表单验证失败时返回。</p>
+<p><em>401(Unauthorized)</em></p>
+<p>当前请求需要用户验证，响应中会包含一个WWW-Authenticate字段来询问用户的授权信息。 而客户端的下次请求需要提供包含Authorization头的请求。</p>
+<p>HTTP Basic Auth就是这样实现的。当服务器返回401时浏览器会弹出窗口：</p>
+<img title="basic-auth@2x" alt="basic-auth@2x" src="http://oi6lwj85c.bkt.clouddn.com/static/images/basic-auth@2x.png">
+<p>输入验证信息并点击确定，浏览器会根据你的输入填写Authorization头并重新发送请求。对于Basic Auth看起来是这样的：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Authorization:Basic eWFuZ2p2bjp5YW5nanZuaGFydA==</div></pre></td></tr></table></figure>
+<p><em>403(Forbidden)</em></p>
+<p>服务器已经理解请求，但是拒绝执行它。与401响应不同的是，身份验证并不能提供任何帮助。</p>
+<blockquote>
+<p>403和401一样，需要在相应消息体中需要给出原因。除非是一个HEAD请求。</p>
+</blockquote>
+<p>通常用于服务器已经知道用户的身份的情况。比如从请求的Cookie得到的Session中可以得知当前用户无权进行该操作。 通常的Web应用中，对于401的情况应当重定向至登录页面，403的情况应当直接告知错误(这属于前端Bug)。</p>
+<p><em>404(Not Found)</em></p>
+<p>这太常见了。就是请求所希望得到的资源未被在服务器上发现。</p>
+<p>当通常用于当服务器不想揭示到底为何请求被拒绝时，比如应当返回500时服务器不愿透露自己的错误。</p>
+<p><em>405(Method Not Allowed)</em></p>
+<p>请求行中指定的请求方法不能被用于请求相应的资源。</p>
+<p>在Web开发中通常是因为客户端和服务器的方法不一致，比如客户端通过PUT来修改一个资源，而服务器把它实现为POST方法。 开发中统一规范就好了。</p>
+<p><em>413(Request Entity Too Large)</em></p>
+<p>服务器拒绝处理当前请求，因为该请求提交的实体数据大小超过了服务器愿意或者能够处理的范围。</p>
+<p>一般的服务器都会设置HTTP请求消息体的最大长度，当然这是一种阻挡攻击的手段。 例如你在使用HTTP方式来访问Git仓库，如果你在仓库中加入了大的二进制文件(通常为目标文件或多媒体文件)， 在Push时服务器很可能会返回413错误。如果切换为ssh协议就不会有这样的问题了，服务器只能限制整个仓库的大小。</p>
+<p><em>414(Request-URI Too Large)</em></p>
+<p>当URI太长时，服务器可以返回414. 当HTTP协议并未规定URI应当有多长。这取决于浏览器和服务器的设置， 在服务器中当然你想设置多长都可以，但是浏览器是你决定不了的，而且不同的厂商在采用不同的长度限制，可以认为最短的是2K：</p>
+<blockquote>
+<p>The limit is in MSIE and Safari about 2KB, in Opera about 4KB and in Firefox about 8KB, (255 bytes if we count very old browsers) .</p>
+</blockquote>
+<p>当然URI长度的这一点限制会使得HTTP GET方法的能力有限，不能传输超过2K的数据。另外因为GET方法的所有数据都体现在URI上， 对于用户是可见的。这一点不太安全。</p>
+<blockquote>
+<p>其实HTTP GET传输数据理论上并不比POST安全更多，因为POST的Entity Body也是明文传输的。只是GET的数据用户直接可见而已。</p>
+</blockquote>
+<p><em>其他</em></p>
+<ul>
+<li>402(Payment Required)</li>
+<li>406(Not Acceptable)</li>
+<li>407(Proxy Authentication Required)</li>
+<li>408(Request Time-out)</li>
+<li>409(Conflict)</li>
+<li>410(Gone)</li>
+<li>411(Length Required)</li>
+<li>412(Precondition Failed)</li>
+<li>415(Unsupported Media Type)</li>
+<li>416(Requested range not satisfiable)</li>
+<li>417(Expectation Failed)</li>
+<li>5xx</li>
+</ul>
+<p>这类状态码代表了服务器在处理请求的过程中有错误或者异常状态发生，也有可能是服务器意识到以当前的软硬件资源无法完成对请求的处理。 并且响应消息体中应当给出理由，除非是HEAD请求。</p>
+<p><em>500(Internal Server Error)</em></p>
+<p>通常是代码出错，后台Bug。一般的Web服务器通常会给出抛出异常的调用堆栈。 然而多数服务器即使在生产环境也会打出调用堆栈，这显然是不安全的。</p>
+<p><em>502(Bad Gateway)</em></p>
+<p>作为网关或者代理工作的服务器尝试执行请求时，从上游服务器接收到无效的响应。</p>
+<p>如果你在用HTTP代理来翻墙，或者你配置了nginx来反向代理你的应用，你可能会常常看到它。</p>
+<p><em>504(Gateway Time-out)</em></p>
+<p>作为网关或者代理工作的服务器尝试执行请求时，未能及时从上游服务器收到响应。</p>
+<p>注意与502的区别：502是接收到了无效响应比如Connection Refused； 504是响应超时，通常是被墙了。</p>
+<p>很多国外站点都会使用CDN来Serve静态文件，但我大中华墙掉了一些CDN。导致这些资源文件的请求会一直处于Pending状态直到超时。 表现为浏览器显示空白页面，长时间处于等待状态。这时在控制台看到HTML已经载入了就可以点击停止按钮了，停止载入那些资源。 页面会立即显示出来，虽然样式和交互可能有问题。</p>
+<p>说到这里想吐槽GFW简直没有行业道德，即使不允许我们访问也返回一个错误嘛，不要让浏览器一直处于等待的状态。</p>
+<p><em>其他</em></p>
+<ul>
+<li>501(Not Implemented)</li>
+<li>503(Service Unavailable)</li>
+<li>505(HTTP Version not supported)</li>
+</ul>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
   <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/12/22/转载-Angular2路由教程3-子模块以及异步加载/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -379,7 +643,7 @@
 <p>为了体现启用延时加载前后的包的大小变化，以及启用压缩后的变化，在这个教程里面，使用了angular-cli创建项目脚手架，并用它来进行测试和打包。有关angular-cli的使用请查看官网。在这篇文章我们使用的angular-cli的版本是1.0.0-beta.21。如果你使用的是别的版本，可能结果就会不一样。甚至有些错误，我们在最后会说明当前版本angular-cli的bug。</p>
 <h3 id="模块设计"><a href="#模块设计" class="headerlink" title="模块设计"></a>模块设计</h3><p>在开发Angular2应用时，除了之前(Angular2入门教程-2 实现TodoList App)讲到的设计方法，像组件设计、路由设计以外，对于一个较大型的应用，我们还需要设计模块。例如，将一个应用分成几个功能模块，以及有哪些公用模块。公用模块里面应该放公用的service类，例如权限验证、登录、获取用户信息、全局的错误处理、工具类等，还有封装的指令或组件。而在某一个功能模块里面，只处理这个模块里面的业务，尽量不和其他模块交互。<br>拿之前教程中的TodoList应用来说，只有home页面和2个todo页面，我们把todo相关的功能放在一个子模块里面，为了演示，又加了一个简单的名字叫lazy的模块。我们将把todo模块和lazy模块配置成延时加载的模块。</p>
 <h3 id="子模块开发"><a href="#子模块开发" class="headerlink" title="子模块开发"></a>子模块开发</h3><p>接下来再看看子模块的开发。其实在之前的例子中，就把todo相关的组件放在了一个模块里面。但是却没有强调子模块开发需要注意的地方，甚至有些配置可能没有采用子模块的方式进行配置。这里，我们就主要说明一下需要注意的地方，如果要查看完整的代码，请参考实例源代码。</p>
-<h3 id="子模块路由"><a href="#子模块路由" class="headerlink" title="子模块路由"></a>子模块路由</h3><p>首先需要注意的是路由。在之前的例子中，我们把todo相关的路由定义在一个文件中，然后在app的路由定义中把所有路由合并到一起。todo.routes.ts的内容如下：</p>
+<h4 id="子模块路由"><a href="#子模块路由" class="headerlink" title="子模块路由"></a>子模块路由</h4><p>首先需要注意的是路由。在之前的例子中，我们把todo相关的路由定义在一个文件中，然后在app的路由定义中把所有路由合并到一起。todo.routes.ts的内容如下：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">// 省略import</div><div class="line">export const TodoRoutes: Route[] = [</div><div class="line">    &#123;</div><div class="line">        path: &apos;todo&apos;,</div><div class="line">        canActivateChild: [MyTodoGuard],</div><div class="line">        children: [</div><div class="line">            &#123; path: &apos;list&apos;, component: TodoListComponent, resolve: &#123; todos: MyTodoResolver &#125; &#125;,</div><div class="line">            &#123; path: &apos;detail/:id&apos;, component: TodoDetailComponent, canDeactivate: [ CanLeaveTodoDetailGuard ] &#125;</div><div class="line">        ]</div><div class="line">    &#125;</div><div class="line">];</div></pre></td></tr></table></figure>
 <p>然后在app.routes.ts中定义一个路由模块：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">const routes: Routes = [</div><div class="line">    &#123; path: &apos;&apos;, redirectTo: &apos;/home&apos;, pathMatch: &apos;full&apos; &#125;,</div><div class="line">    &#123; path: &apos;home&apos;, component: HomeComponent &#125;,</div><div class="line">    ...TodoRoutes // 这里就是将TodoRoutes列表里的内容合并到routes</div><div class="line">];</div><div class="line">@NgModule(&#123;</div><div class="line">  imports: [ RouterModule.forRoot(routes) ],</div><div class="line">  exports: [ RouterModule ]</div><div class="line">&#125;)</div><div class="line">export class AppRoutingModule &#123; &#125;</div></pre></td></tr></table></figure>
@@ -390,10 +654,10 @@
 <p>定义好了子路由模块，我们就在子模块里面引入它既可：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">// 省略import</div><div class="line">@NgModule(&#123;</div><div class="line">  imports: [CommonModule, FormsModule, TodoRoutingModule ],</div><div class="line">  declarations: [TodoListComponent, TodoDetailComponent, TodoItemComponent],</div><div class="line">  providers: [TodoService, MyTodoResolver, MyTodoGuard, CanLeaveTodoDetailGuard]</div><div class="line">&#125;)</div><div class="line">export class TodoModule &#123;&#125;</div></pre></td></tr></table></figure>
 <p>这样，我们就定义好了一个子模块。当用户打开/todo/list或/todo/detail/*时，这个子模块里面的相关页面就会展示，它也不会跟其他模块有任何交互。也就是说，进入和离开这个子模块，都是通过路由跳转实现。这个子模块也是完全独立的，可以独立开发，也可以很容易就用到其他应用里面。</p>
-<h3 id="延时加载子模块"><a href="#延时加载子模块" class="headerlink" title="延时加载子模块"></a>延时加载子模块</h3><p>下面，我们就可以通过修改路由的配置，使得todo模块实现延时加载。Angular的路由模块已经提供了loadChildren定义可以直接帮我们实现该功能。下面就是新的app路由定义：</p>
+<h4 id="延时加载子模块"><a href="#延时加载子模块" class="headerlink" title="延时加载子模块"></a>延时加载子模块</h4><p>下面，我们就可以通过修改路由的配置，使得todo模块实现延时加载。Angular的路由模块已经提供了loadChildren定义可以直接帮我们实现该功能。下面就是新的app路由定义：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">const routes: Routes = [</div><div class="line">    &#123; path: &apos;&apos;, redirectTo: &apos;/home&apos;, pathMatch: &apos;full&apos; &#125;,</div><div class="line">    &#123; path: &apos;home&apos;, component: HomeComponent &#125;,</div><div class="line">    &#123; path: &apos;todo&apos;, loadChildren: &apos;app/todo/todo.module#TodoModule&apos; &#125;,</div><div class="line">    &#123; path: &apos;lazy&apos;, loadChildren: &apos;app/lazy/lazy.module#LazyModule&apos; &#125;</div><div class="line">];</div><div class="line">@NgModule(&#123;</div><div class="line">  imports: [ RouterModule.forRoot(routes) ],</div><div class="line">  exports: [ RouterModule ]</div><div class="line">&#125;)</div><div class="line">export class AppRoutingModule &#123; &#125;</div></pre></td></tr></table></figure>
 <p>在这里，我们对于todo路径，交给app/todo/todo.module里面的TodoModule模块处理。而在TodoModule模块里，已经有一个子路由的定义。</p>
-<p>最后，再修改app.module.ts，保证它里面不再引入TodoModule。如此一来，我们在主模块AppModule里面，没有引入todo模块的任何组件或服务。这样就能在完全脱离TodoModule模块的情况下，运行主模块的功能。当用户打开/todo里面的url时，就加载app/lazy/lazy.module里面的LazyModule模块，并交由它来处理响应的url。</p>
+<p>最后，再修改app.module.ts，保证它里面不再引入TodoModule。如此一来，我们在主模块AppModule里面，没有引入todo模块的任何组件或服务。这样就能在完全脱离TodoModule模块的情况下，运行主模块的功能。当用户打开/todo里面的url时，就加载app/todo/todo.module里面的TodoModule模块，并交由它来处理响应的url。</p>
 <p>总结一下，实现延时加载子模块，主要是要注意下面几点：</p>
 <ul>
 <li>子模块的路由用RouterModule.forChild(TodoRoutes)方式定义。</li>
@@ -401,20 +665,19 @@
 <li>只有子模块才会用到的Service在子模块的providers里面定义，如果是主模块和子模块都会用到的Service就用公用模块的方式定义。要注意这个Service的实例只能有一个。</li>
 </ul>
 <h3 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h3><p>接下来我们来看看运行的结果。（注意根据运行环境不同，文件大小会不一样）</p>
-<p>不启用延时加载</p>
-<p>首先，我们在app.module.ts引入TodoModule，这样todo模块不是延时加载的，只有lazy模块是延时加载的。我们使用ng serve的方式运行测试服务器，并打开页面，打开几个页面以后，网络请求如下：</p>
+<h4 id="不启用延时加载"><a href="#不启用延时加载" class="headerlink" title="不启用延时加载"></a>不启用延时加载</h4><p>首先，我们在app.module.ts引入TodoModule，这样todo模块不是延时加载的，只有lazy模块是延时加载的。我们使用ng serve的方式运行测试服务器，并打开页面，打开几个页面以后，网络请求如下：</p>
 <img title="lazy-dev-no" alt="lazy-dev-no" src="http://oi6lwj85c.bkt.clouddn.com/static/images/lazy-dev-no.jpg">
 <p>从图中可以看到，有一个3.4M的main的js文件，下面的1.chunk.js的lazy模块延时加载的。打包的文件确实是非常的大，因为lazy模块非常简单，只是显示了一个字符串在模板里。所以它的大小也非常小，才5.8k。</p>
-<h3 id="延时加载模式"><a href="#延时加载模式" class="headerlink" title="延时加载模式"></a>延时加载模式</h3><p>下面在把TodoModule模块从app.module.ts去掉，这样，todo模块就是延时加载的，再看一下网络请求：</p>
+<h4 id="延时加载模式"><a href="#延时加载模式" class="headerlink" title="延时加载模式"></a>延时加载模式</h4><p>下面在把TodoModule模块从app.module.ts去掉，这样，todo模块就是延时加载的，再看一下网络请求：</p>
 <img title="lazy-dev" alt="lazy-dev" src="http://oi6lwj85c.bkt.clouddn.com/static/images/lazy-dev.jpg">
 <p>这下main文件变成了3.1M，lazy模块对应的js文件是1.chunk.js，还是5.8k，todo模块对应的文件0.chunk.js是324K。可以看见一个很简单的todo模块，里面有service, rosolver, guards, 还有3个组件，里面分别都有模块、css，虽然文件不少，但是他们的实现实际上都很小。只是一个模块的文件，在未压缩的情况下就有300多K，让我这个Angular2的忠实粉丝都无语。</p>
-<h3 id="延时加载-prod模式"><a href="#延时加载-prod模式" class="headerlink" title="延时加载-prod模式"></a>延时加载-prod模式</h3><p>一般我们在部署应用的时候，都会使用压缩、混淆、合并等方法来减少最终文件的大小。使用angular-cli工具，除了在编译的时候提供打包的功能，甚至在测试的时候，也可以启用压缩选项。我们可以运行ng serve -pro来使用prod模式来启动测试服务器。在启动的过程中，可以看到很多类似下面的日志：</p>
+<h4 id="延时加载-prod模式"><a href="#延时加载-prod模式" class="headerlink" title="延时加载-prod模式"></a>延时加载-prod模式</h4><p>一般我们在部署应用的时候，都会使用压缩、混淆、合并等方法来减少最终文件的大小。使用angular-cli工具，除了在编译的时候提供打包的功能，甚至在测试的时候，也可以启用压缩选项。我们可以运行ng serve -pro来使用prod模式来启动测试服务器。在启动的过程中，可以看到很多类似下面的日志：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">WARNING in 0.005fea95566fdabe23df.chunk.js from UglifyJs</div><div class="line">Dropping unused function scheduleMicroTask [/Users/mavlarn/mydev/blog/angular2-tutorial/angular2-routes-lazy-module-webpack/~/@angular/forms/src/facade/lang.js:21,0]</div></pre></td></tr></table></figure>
-<p>可以看出，angular-cli的prod模式下编译的时候，去除了很多不需要的代码，这就是angular的Tree Shaking的功能。</p>
+<p>可以看出，angular-cli的prod模式下编译的时候，去除了很多不需要的代码，这就是angular的<a href="https://angular.cn/docs/ts/latest/cookbook/aot-compiler.html#!#sts=Tree Shaking" target="_blank" rel="external">Tree Shaking</a>的功能。</p>
 <p>运行以后，网络请求如下：</p>
 <img title="lazy-serve-prod" alt="lazy-serve-prod" src="http://oi6lwj85c.bkt.clouddn.com/static/images/lazy-serve-prod.jpg">
 <p>这下main文件减少到了221K，lazy模块对应的js文件是1.chunk.js，只有1.0k，todo模块对应的文件0.chunk.js是17.9K。总共大小大概是240K左右，如果再使用GZip压缩，应该可以到6，70K左右。在官方文档里提到，一个Angular2的简单实例，通过Tree Shaking、压缩、GZip，最终下载的包大小有50K。我们这个实例毕竟稍微复杂，实现了大多数的通用功能，如路由、guard、resolver、表单，也是用到了Rxjs里的Observable，所以最终压缩后能有70K左右的话，也符合官方文档的说法。</p>
-<h3 id="编译后"><a href="#编译后" class="headerlink" title="编译后"></a>编译后</h3><p>最后，我们再使用ng build –prod来看看用prod模式编译后的大小：</p>
+<h4 id="编译后"><a href="#编译后" class="headerlink" title="编译后"></a>编译后</h4><p>最后，我们再使用ng build –prod来看看用prod模式编译后的大小：</p>
 <img title="lazy-prod" alt="lazy-prod" src="http://oi6lwj85c.bkt.clouddn.com/static/images/lazy-prod.jpg">
 <p>结果出乎意外，main文件的大小比上面在prod模式下运行测试服务器大很多，达到800多K。应该是编译过程需要某些参数，或者是当前的angular-cli有什么bug。<br>再使用ng build –prod –aot编译，main文件的大小是446K。虽然小了一点，但是也不符合预期。</p>
 <h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>先说延时加载，应该都知道可以减少第一次加载的文件的大小。特别是当某个模块使用了一些比较大第三方的js库，例如图形库等，那么，把这些模块独立出来，使用延时加载的方式，可以大大减少首次加载的时间。对于Angular2的应用来说，如果我们要定义Component，就从@angular/core里面引入Component，需要定义路由就从@angular/router里面引入`Router。所以，只要我们设计好了整个App的模块、组件、路由，我们就可以利用延时加载的功能使得首页文件尽可能的小。</p>
@@ -948,7 +1211,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-count">5</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -965,7 +1228,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
