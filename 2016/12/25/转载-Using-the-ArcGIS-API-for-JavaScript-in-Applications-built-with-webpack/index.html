@@ -95,8 +95,8 @@
 <meta property="og:site_name" content="飞鸿雪泥之地">
 <meta property="og:description" content="It seems like webpack is becoming the most popular module bundler in the Angular 2 and React communities. It is not (yet) possible to have webpack directly load modules from the ArcGIS API For JavaScr">
 <meta property="og:image" content="http://oi6lwj85c.bkt.clouddn.com/static/images/Dedicated-Loader-Module.png">
-<meta property="og:image" content="http://oi6lwj85c.bkt.clouddn.com/static/images/Exclude">
-<meta property="og:updated_time" content="2016-12-25T14:42:42.729Z">
+<meta property="og:image" content="http://oi6lwj85c.bkt.clouddn.com/static/images/Exclude-and-Require.png">
+<meta property="og:updated_time" content="2016-12-26T14:18:28.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="[转载]Using the ArcGIS API for JavaScript in Applications built with webpack">
 <meta name="twitter:description" content="It seems like webpack is becoming the most popular module bundler in the Angular 2 and React communities. It is not (yet) possible to have webpack directly load modules from the ArcGIS API For JavaScr">
@@ -407,7 +407,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">import Map from &apos;esri/Map&apos;</div><div class="line">let map = new Map(&apos;mapNode&apos;, &#123;</div><div class="line">  center: [-118, 34.5],</div><div class="line">  zoom: 8,</div><div class="line">  basemap: &apos;dark-gray&apos;</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
 <h4 id="Benefits-1"><a href="#Benefits-1" class="headerlink" title="Benefits"></a>Benefits</h4><p>Allows you to use ES2015 import statements<br>No need for asynchronous code (callbacks or Promises) to load ArcGIS modules</p>
 <h4 id="Challenges-1"><a href="#Challenges-1" class="headerlink" title="Challenges"></a>Challenges</h4><p>The (rather hefty) ArcGIS API for JavaScript will have to finish loading before the rest of your application can begin loading<br>Using ES2015 import statements confuses some developers who don’t understand where those modules are coming from<br>Existing unit test examples load the ArcGIS API for JavaScript in the test harness instead of mocking them<br>No one has figured out how to use it with angular-cli yet</p>
-<h4 id="Examples-1"><a href="#Examples-1" class="headerlink" title="Examples"></a>Examples</h4><img title="Exclude" alt="Exclude" src="http://oi6lwj85c.bkt.clouddn.com/static/images/Exclude">
+<h4 id="Examples-1"><a href="#Examples-1" class="headerlink" title="Examples"></a>Examples</h4><img title="Exclude-and-Require" alt="Exclude-and-Require" src="http://oi6lwj85c.bkt.clouddn.com/static/images/Exclude-and-Require.png">
 <p>At the most basic level, this pattern is exemplified in the esri-webpack-typescript boilerplate. esri-webpack-babel is a fork of that boilerplate that uses Babel instead of TypeScript and includes inline comments and documentation on how it works.</p>
 <p><a href="https://github.com/tomwayson/angular2-esri-example" target="_blank" rel="external">angular2-esri-example</a> demonstrates how to use this pattern in an Angular 2 application.</p>
 <p>Similarly, esri-redux demonstrates how to use this pattern in an application built with React and Redux, and its predecessor, esri-flux-react, shows the same but with Flux instead of Redux.</p>
@@ -467,6 +467,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/12/27/转载-业余爱好者打好乒乓球的29个要点/" rel="prev" title="[转载]业余爱好者打好乒乓球的29个要点">
+                [转载]业余爱好者打好乒乓球的29个要点 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -538,7 +542,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">7</span>
+              <span class="site-state-item-count">8</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -546,7 +550,7 @@
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -555,7 +559,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-count">7</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
