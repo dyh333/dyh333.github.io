@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://dyh333.me/about/index.html</loc>
+    
+    <lastmod>2017-01-22T07:05:58.804Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://dyh333.me/photos/galleries.json</loc>
     
     <lastmod>2017-01-22T06:59:36.829Z</lastmod>
@@ -47,13 +54,6 @@
     <loc>http://dyh333.me/2017/01/17/%E5%8F%AF%E8%A7%86%E5%8C%96%E6%A1%88%E4%BE%8B.html</loc>
     
     <lastmod>2017-01-20T08:37:33.083Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://dyh333.me/about/index.html</loc>
-    
-    <lastmod>2017-01-20T06:39:26.317Z</lastmod>
     
   </url>
   
