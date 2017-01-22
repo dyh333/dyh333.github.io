@@ -1,0 +1,1051 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+  
+
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="ArcGIS," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="It seems like webpack is becoming the most popular module bundler in the Angular 2 and React communities. It is not (yet) possible to have webpack directly load modules from the ArcGIS API For JavaScr">
+<meta property="og:type" content="article">
+<meta property="og:title" content="[转载]Using the ArcGIS API for JavaScript in Applications built with webpack">
+<meta property="og:url" content="http://dyh333.me/2016/12/25/转载-Using-the-ArcGIS-API-for-JavaScript-in-Applications-built-with-webpack.html">
+<meta property="og:site_name" content="鸿 泥 地">
+<meta property="og:description" content="It seems like webpack is becoming the most popular module bundler in the Angular 2 and React communities. It is not (yet) possible to have webpack directly load modules from the ArcGIS API For JavaScr">
+<meta property="og:image" content="http://oi6lwj85c.bkt.clouddn.com/static/images/Dedicated-Loader-Module.png">
+<meta property="og:image" content="http://oi6lwj85c.bkt.clouddn.com/static/images/Exclude-and-Require.png">
+<meta property="og:updated_time" content="2016-12-26T14:18:28.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="[转载]Using the ArcGIS API for JavaScript in Applications built with webpack">
+<meta name="twitter:description" content="It seems like webpack is becoming the most popular module bundler in the Angular 2 and React communities. It is not (yet) possible to have webpack directly load modules from the ArcGIS API For JavaScr">
+<meta name="twitter:image" content="http://oi6lwj85c.bkt.clouddn.com/static/images/Dedicated-Loader-Module.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: false,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://dyh333.me/2016/12/25/转载-Using-the-ArcGIS-API-for-JavaScript-in-Applications-built-with-webpack.html"/>
+
+
+
+
+
+  <title> [转载]Using the ArcGIS API for JavaScript in Applications built with webpack | 鸿 泥 地 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-88929095-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">鸿 泥 地</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-books">
+          <a href="/books" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-book"></i> <br />
+            
+            读书
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-photos">
+          <a href="/photos" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-photo"></i> <br />
+            
+            相册
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup">
+ <span class="search-icon fa fa-search"></span>
+ <input type="text" id="local-search-input">
+ <div id="local-search-result"></div>
+ <span class="popup-btn-close">close</span>
+</div>
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://dyh333.me/2016/12/25/转载-Using-the-ArcGIS-API-for-JavaScript-in-Applications-built-with-webpack.html">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="dingyh">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/uploads/avatar.png">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="鸿 泥 地">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="鸿 泥 地" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                [转载]Using the ArcGIS API for JavaScript in Applications built with webpack
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-12-25T21:54:52+08:00">
+                2016-12-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/它山之石/" itemprop="url" rel="index">
+                    <span itemprop="name">它山之石</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <a href="/2016/12/25/转载-Using-the-ArcGIS-API-for-JavaScript-in-Applications-built-with-webpack.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/25/转载-Using-the-ArcGIS-API-for-JavaScript-in-Applications-built-with-webpack.html" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/12/25/转载-Using-the-ArcGIS-API-for-JavaScript-in-Applications-built-with-webpack.html" class="leancloud_visitors" data-flag-title="[转载]Using the ArcGIS API for JavaScript in Applications built with webpack">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>It seems like webpack is becoming the most popular module bundler in the Angular 2 and React communities. It is not (yet) possible to have webpack directly load modules from the ArcGIS API For JavaScript. However, the ArcGIS developer community has come up a couple innovative workarounds that make it easy to add ArcGIS maps and services to applications built with webpack. Unfortunately I’ve seen a few developers run into trouble because they don’t understand how these abstractions work.</p>
+<p>In this post, I’ll explain the hack that underlies these solutions and explore the pros and cons of two patterns for loading ArcGIS modules in applications that are built with a module bundler. Although most of the examples shown use webpack, the same patterns can be applied to rollup.js as well.</p>
+<h3 id="The-problem"><a href="#The-problem" class="headerlink" title="The problem"></a>The problem</h3><p>The ArcGIS API for JavaScript is written in Dojo and distributed as large library of AMD modules. Unfortunately, most module loaders, including webpack, implement the AMD “standard” differently than the way that Dojo does, specifically in the area of plugins. There is a Dojo loader for webpack that tries to address those differences, but as of time of writing it is not capable of loading ArcGIS modules. Even once that issue is resolved, I still think you’ll want to understand the workarounds below so you can decide which is the best solution for your application.</p>
+<h3 id="Solutions-you-can-use-today"><a href="#Solutions-you-can-use-today" class="headerlink" title="Solutions you can use today"></a>Solutions you can use today</h3><p>The ArcGIS developer community has come up with a few solutions to this problem that are based on a common underlying hack. In one form or another, all of these solutions:</p>
+<ol>
+<li>Exclude ArcGIS API modules from any bundling done by other module loaders</li>
+<li>Load the ArcGIS API for JavaScript via a script tag on the page</li>
+<li>Use Dojo’s global require() and define() functions to load ArcGIS modules</li>
+</ol>
+<p>You can of course do all of that without any special library. The libraries and boilerplates that developers have created provide varying amounts of syntactic sugar that hide this hack from developers. I’m going to group these solutions into 2 patterns and discuss the strengths and weaknesses of each.</p>
+<h3 id="Pattern-1-Dedicated-Loader-Module"><a href="#Pattern-1-Dedicated-Loader-Module" class="headerlink" title="Pattern 1: Dedicated Loader Module"></a>Pattern 1: Dedicated Loader Module</h3><p>This is the lowest level of abstraction around the above hack. The idea is that you have a single module in your application that acts as a thin wrapper around the global require() and also provides a method to lazy load the ArcGIS API (i.e. programmatically inject a script tag on the page). It looks something like this:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">// import the loader module</div><div class="line">import * as esriLoader from &apos;esri-loader&apos;;</div><div class="line">// then use Dojo&apos;s loader to require the map class</div><div class="line">esriLoader.dojoRequire([&apos;esri/map&apos;], (Map) =&gt; &#123;</div><div class="line">  // create map with the given options at a DOM node w/ id &apos;mapNode&apos;</div><div class="line">  let map = new Map(&apos;mapNode&apos;, &#123;</div><div class="line">    center: [-118, 34.5],</div><div class="line">    zoom: 8,</div><div class="line">    basemap: &apos;dark-gray&apos;</div><div class="line">  &#125;);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<h4 id="Benefits"><a href="#Benefits" class="headerlink" title="Benefits"></a>Benefits</h4><p>Helps enforce the best practice of pushing your dependencies (ArcGIS API for JavaScript), as well as the unsavory use of globals to the edge of your application<br>Only load the ArcGIS API for JavaScript on routes where it’s needed<br>Unit tests do not need to load the ArcGIS API for JavaScript; instead mock the loader service and any modules it would return</p>
+<h4 id="Challenges"><a href="#Challenges" class="headerlink" title="Challenges"></a>Challenges</h4><ul>
+<li>application developers need to understand the asynchronous nature of loading ArcGIS modules and use appropriate techniques such callbacks or promises not only when loading map data, but also when loading ArcGIS API modules</li>
+<li>you cannot use ES2015 import statements with this pattern</li>
+</ul>
+<h4 id="Examples"><a href="#Examples" class="headerlink" title="Examples"></a>Examples</h4><img title="Dedicated-Loader-Module" alt="Dedicated-Loader-Module" src="http://oi6lwj85c.bkt.clouddn.com/static/images/Dedicated-Loader-Module.png">
+<p><a href="https://github.com/tomwayson/esri-loader" target="_blank" rel="external">esri-loader</a> is a standalone library that implements this pattern and makes it available to any Angular 2 or React application.</p>
+<p><a href="https://github.com/tomwayson/angular2-esri-loader" target="_blank" rel="external">angular2-esri-loader</a> exposes an Angular 2 service that wraps the esri-loader functions in ones that return promises to make it easier to use in Angular 2 applications.</p>
+<p><a href="https://github.com/tomwayson/esri-angular-cli-example" target="_blank" rel="external">esri-angular-cli-example</a> is an example angular-cli<br>application that uses the angular2-esri-loader library to lazy load modules from the ArcGIS API for JavaScript only on the map route. This application also includes example unit tests that demonstrate how to mock the loader and modules.</p>
+<p><a href="https://github.com/davetimmins/create-react-app-esri-loader/" target="_blank" rel="external">esri-react-router-example</a> is an example react-router application that uses the esri-loader library to lazy load modules from the ArcGIS API for JavaScript only on the map route.</p>
+<p><a href="https://github.com/davetimmins/create-react-app-esri-loader/" target="_blank" rel="external">create-react-app-esri-loader</a> applies this pattern to the output of create-react-app.</p>
+<p>This pattern finds it’s roots in <a href="https://github.com/Esri/angular-esri-map" target="_blank" rel="external">angular-esri-map</a>, a library for using ArcGIS maps and services in Angular 1 applications.</p>
+<h3 id="Pattern-2-Exclude-and-Require"><a href="#Pattern-2-Exclude-and-Require" class="headerlink" title="Pattern 2: Exclude and Require"></a>Pattern 2: Exclude and Require</h3><p>This pattern provides a slightly higher level of abstraction around the above hack. The way it works has been well documented in this gist, and here are the key parts:</p>
+<ol>
+<li>Configure webpack to exclude the Dojo modules from the ArcGIS API for JavaScript</li>
+<li>Configure webpack to output the bundles themselves as AMD (or UMD) modules</li>
+<li>Load the ArcGIS API for JavaScript via a script tag</li>
+<li>Use the Dojo loader included in the ArcGIS API for JavaScript to require() the bundles</li>
+</ol>
+<p>Then in your application you can do something like:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">import Map from &apos;esri/Map&apos;</div><div class="line">let map = new Map(&apos;mapNode&apos;, &#123;</div><div class="line">  center: [-118, 34.5],</div><div class="line">  zoom: 8,</div><div class="line">  basemap: &apos;dark-gray&apos;</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<h4 id="Benefits-1"><a href="#Benefits-1" class="headerlink" title="Benefits"></a>Benefits</h4><p>Allows you to use ES2015 import statements<br>No need for asynchronous code (callbacks or Promises) to load ArcGIS modules</p>
+<h4 id="Challenges-1"><a href="#Challenges-1" class="headerlink" title="Challenges"></a>Challenges</h4><p>The (rather hefty) ArcGIS API for JavaScript will have to finish loading before the rest of your application can begin loading<br>Using ES2015 import statements confuses some developers who don’t understand where those modules are coming from<br>Existing unit test examples load the ArcGIS API for JavaScript in the test harness instead of mocking them<br>No one has figured out how to use it with angular-cli yet</p>
+<h4 id="Examples-1"><a href="#Examples-1" class="headerlink" title="Examples"></a>Examples</h4><img title="Exclude-and-Require" alt="Exclude-and-Require" src="http://oi6lwj85c.bkt.clouddn.com/static/images/Exclude-and-Require.png">
+<p>At the most basic level, this pattern is exemplified in the esri-webpack-typescript boilerplate. esri-webpack-babel is a fork of that boilerplate that uses Babel instead of TypeScript and includes inline comments and documentation on how it works.</p>
+<p><a href="https://github.com/tomwayson/angular2-esri-example" target="_blank" rel="external">angular2-esri-example</a> demonstrates how to use this pattern in an Angular 2 application.</p>
+<p>Similarly, esri-redux demonstrates how to use this pattern in an application built with React and Redux, and its predecessor, esri-flux-react, shows the same but with Flux instead of Redux.</p>
+<p>The configurations from those application are used in create-react-app-arcgis which applies this pattern to the output of create-react-app.</p>
+<p><a href="https://github.com/tomwayson/esri-rollup-example" target="_blank" rel="external">esri-rollup-example</a> is an example application that shows how to use this pattern with rollup.js instead of webpack.</p>
+<h3 id="FAQ"><a href="#FAQ" class="headerlink" title="FAQ"></a>FAQ</h3><h4 id="Which-pattern-is-right-for-me"><a href="#Which-pattern-is-right-for-me" class="headerlink" title="Which pattern is right for me?"></a>Which pattern is right for me?</h4><p>If your application doesn’t have a map in every route, and/or is targeting mobile browsers, you probably want to consider using the dedicated loader module pattern. Also, this is the only pattern that currently works in angular-cli.</p>
+<p>If you’re developing a map-centric application that primarily targets desktop browsers, the exclude and require pattern provides a clean abstraction that lets you import ArcGIS modules as you would modules from any other library.</p>
+<h4 id="What’s-the-catch"><a href="#What’s-the-catch" class="headerlink" title="What’s the catch?"></a>What’s the catch?</h4><p>Obviously relying on the global require() and define() functions isn’t exactly a best practice, and it’s the main source of risk in the above patterns. For example, because Ember.js defines these functions globally, the patterns demonstrated above won’t work in Ember.js applications. Thankfully ember-cli-amd provides an equivalent abstraction for working with ArcGIS API for JavaScript in Ember.js applications. So, as long as your application doesn’t use a library that relies on those globals, these patterns should work for you.</p>
+<p>As I mention above, the dedicated loader pattern has been battle tested in at least a few production Angular 1 applications. Also, there’s a good discussion about (the apparent lack of) limitations of the exclude and require pattern in this issue thread.</p>
+<h4 id="Will-we-need-these-patterns-once-dojo-webpack-loader-works"><a href="#Will-we-need-these-patterns-once-dojo-webpack-loader-works" class="headerlink" title="Will we need these patterns once dojo-webpack-loader works?"></a>Will we need these patterns once dojo-webpack-loader works?</h4><p>I think that it won’t be long before someone resolves the issue with dojo-webpack-loader not being able to load ArcGIS modules. That said, I think the above patterns may still prove useful. There are several other unresolved issues that indicate that it’s implementation of Dojo plugins is not complete. Furthermore, I question whether webpack can do a better job of building the ArcGIS API for JavaScript than Dojo does. More importantly, how will webpack handle the files that the are traditionally excluded from Dojo builds of the ArcGIS API and then required asynchronously at runtime? What about the CSS?</p>
+<p>It may be best to just think of the pre-built ArcGIS API for JavaScript as a special chunk that you can choose whether to load up front (with either pattern) or lazy load (with the “dedicated loader module” pattern).</p>
+<h4 id="Do-I-need-to-use-the-CDN"><a href="#Do-I-need-to-use-the-CDN" class="headerlink" title="Do I need to use the CDN?"></a>Do I need to use the CDN?</h4><p>No. While all of the above examples for each of the patterns use the CDN, you should be able to use any of the other ways to get the ArcGIS API for JavaScript such as a locally hosted Bower build or SDK download.</p>
+<h3 id="A-community-effort"><a href="#A-community-effort" class="headerlink" title="A community effort"></a>A community effort</h3><p>The ArcGIS developer community has come up with innovative solutions to the challenge of loading and consuming ArcGIS modules in Angular 2 and React applications built with webpack. In particular I’d like to thank @patrickarlt, @ScottONeal, @willisd2, @trkbrkr2000, @jwasilgeo, @Robert-W, @lobsteropteryx, @gund, @davetimmins, and @kgs916 for their contributions to the above solutions. I hope I’ve left you with a better understanding of how those solutions work and when you might want to use one or the other.</p>
+<p>I also hope to inspire you to contribute to these projects and continue to evolve these solutions. There’s still plenty of work to be done. Optimization techniques like tree shaking, code splitting, and lazy loading are still relatively new to most webpack developers. As successful patterns emerge, the ArcGIS developer community will have to figure out how to extend and/or emulate those patterns with the ArcGIS API for JavaScript.</p>
+<p>Although my name is on a lot of those repositories, I’m going to play less of a role in this community effort going forward. For almost a year now I’ve been happily developing with Ember.js, which uses broccoli.js instead of webpack. To be honest, beyond the idiosyncrasies of loading ArcGIS AMD modules I only know enough webpack, Angular 2, and React to be dangerous. Now that this community has established some base module loading patterns, and since Ember.js is the framework I use day to day, I’ll be focussing my energies on making it easier for Ember.js developers to work with the ArcGIS platform.</p>
+<blockquote>
+<p>作者：tomwayson<br>链接：<a href="http://tomwayson.com/2016/11/27/using-the-arcgis-api-for-javascript-in-applications-built-with-webpack/" target="_blank" rel="external">http://tomwayson.com/2016/11/27/using-the-arcgis-api-for-javascript-in-applications-built-with-webpack/</a><br>来源：个人博客</p>
+</blockquote>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/ArcGIS/" rel="tag"># ArcGIS</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/12/25/转载-什么是JWT-JSON-WEB-TOKEN.html" rel="next" title="[转载]什么是JWT--JSON-WEB-TOKEN">
+                <i class="fa fa-chevron-left"></i> [转载]什么是JWT--JSON-WEB-TOKEN
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/12/27/转载-业余爱好者打好乒乓球的29个要点.html" rel="prev" title="[转载]业余爱好者打好乒乓球的29个要点">
+                [转载]业余爱好者打好乒乓球的29个要点 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/12/25/转载-Using-the-ArcGIS-API-for-JavaScript-in-Applications-built-with-webpack.html"
+           data-title="[转载]Using the ArcGIS API for JavaScript in Applications built with webpack" data-url="http://dyh333.me/2016/12/25/转载-Using-the-ArcGIS-API-for-JavaScript-in-Applications-built-with-webpack.html">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/uploads/avatar.png"
+               alt="dingyh" />
+          <p class="site-author-name" itemprop="name">dingyh</p>
+          <p class="site-description motion-element" itemprop="description">人生到处知何似，应似飞鸿踏雪泥。</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">13</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">11</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/dyh333" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.zhihu.com/people/yh-ding" target="_blank" title="知乎">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  知乎
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#The-problem"><span class="nav-number">1.</span> <span class="nav-text">The problem</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Solutions-you-can-use-today"><span class="nav-number">2.</span> <span class="nav-text">Solutions you can use today</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Pattern-1-Dedicated-Loader-Module"><span class="nav-number">3.</span> <span class="nav-text">Pattern 1: Dedicated Loader Module</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Benefits"><span class="nav-number">3.1.</span> <span class="nav-text">Benefits</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Challenges"><span class="nav-number">3.2.</span> <span class="nav-text">Challenges</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Examples"><span class="nav-number">3.3.</span> <span class="nav-text">Examples</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Pattern-2-Exclude-and-Require"><span class="nav-number">4.</span> <span class="nav-text">Pattern 2: Exclude and Require</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Benefits-1"><span class="nav-number">4.1.</span> <span class="nav-text">Benefits</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Challenges-1"><span class="nav-number">4.2.</span> <span class="nav-text">Challenges</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Examples-1"><span class="nav-number">4.3.</span> <span class="nav-text">Examples</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#FAQ"><span class="nav-number">5.</span> <span class="nav-text">FAQ</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Which-pattern-is-right-for-me"><span class="nav-number">5.1.</span> <span class="nav-text">Which pattern is right for me?</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#What’s-the-catch"><span class="nav-number">5.2.</span> <span class="nav-text">What’s the catch?</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Will-we-need-these-patterns-once-dojo-webpack-loader-works"><span class="nav-number">5.3.</span> <span class="nav-text">Will we need these patterns once dojo-webpack-loader works?</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Do-I-need-to-use-the-CDN"><span class="nav-number">5.4.</span> <span class="nav-text">Do I need to use the CDN?</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#A-community-effort"><span class="nav-number">6.</span> <span class="nav-text">A community effort</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-star"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">dingyh</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
+
+  
+  <script type="text/javascript" src="//cdn.jsdelivr.net/fastclick/1.0.6/fastclick.min.js"></script>
+
+  
+  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.lazyload/1.9.3/jquery.lazyload.min.js"></script>
+
+  
+  <script type="text/javascript" src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js"></script>
+
+  
+  <script type="text/javascript" src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.ui.min.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"dyh333"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+    
+    <script src="//cdn.jsdelivr.net/ua-parser.js/0.7.10/ua-parser.min.js"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
+
+
+
+
+
+
+  
+  
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length == 0) {
+      search_path = "search.xml";
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    function proceedsearch() {
+      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
+      $('.popup').toggle();
+    }
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+      $.ajax({
+        url: path,
+        dataType: "xml",
+        async: true,
+        success: function( xmlResponse ) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = $( "entry", xmlResponse ).map(function() {
+            return {
+              title: $( "title", this ).text(),
+              content: $("content",this).text(),
+              url: $( "url" , this).text()
+            };
+          }).get();
+          var $input = document.getElementById(search_id);
+          var $resultContent = document.getElementById(content_id);
+          $input.addEventListener('input', function(){
+            var matchcounts = 0;
+            var str='<ul class=\"search-result-list\">';
+            var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+            $resultContent.innerHTML = "";
+            if (this.value.trim().length > 1) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var content_index = [];
+                var data_title = data.title.trim().toLowerCase();
+                var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                var data_url = decodeURIComponent(data.url);
+                var index_title = -1;
+                var index_content = -1;
+                var first_occur = -1;
+                // only match artiles with not empty titles and contents
+                if(data_title != '') {
+                  keywords.forEach(function(keyword, i) {
+                    index_title = data_title.indexOf(keyword);
+                    index_content = data_content.indexOf(keyword);
+                    if( index_title >= 0 || index_content >= 0 ){
+                      isMatch = true;
+                      if (i == 0) {
+                        first_occur = index_content;
+                      }
+                    }
+
+                  });
+                }
+                // show search results
+                if (isMatch) {
+                  matchcounts += 1;
+                  str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                  var content = data.content.trim().replace(/<[^>]+>/g,"");
+                  if (first_occur >= 0) {
+                    // cut out 100 characters
+                    var start = first_occur - 20;
+                    var end = first_occur + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if(start == 0){
+                      end = 50;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    var match_content = content.substring(start, end);
+                    // highlight all keywords
+                    keywords.forEach(function(keyword){
+                      var regS = new RegExp(keyword, "gi");
+                      match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                    });
+
+                    str += "<p class=\"search-result\">" + match_content +"...</p>"
+                  }
+                  str += "</li>";
+                }
+              })};
+            str += "</ul>";
+            if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+            if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+            $resultContent.innerHTML = str;
+          });
+          proceedsearch();
+        }
+      });}
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched == false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(function(e){
+      $('.popup').hide();
+      $(".popoverlay").remove();
+      $('body').css('overflow', '');
+    });
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+  </script>
+
+
+  
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("8hNAH7aktu8YYNIXMIGDDoNa-gzGzoHsz", "xEyLdmhLPEq0K3OXqGEkmBYO");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+
+</body>
+</html>

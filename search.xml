@@ -1,0 +1,761 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+    
+    <entry>
+      <title><![CDATA[可视化案例]]></title>
+      <url>http://dyh333.me/2017/01/17/%E5%8F%AF%E8%A7%86%E5%8C%96%E6%A1%88%E4%BE%8B.html</url>
+      <content type="html"><![CDATA[<h3 id="案例库"><a href="#案例库" class="headerlink" title="案例库"></a>案例库</h3><ol>
+<li><p><a href="http://globe.cid.harvard.edu/" target="_blank" rel="external">The globe of economic complexity</a></p>
+<blockquote>
+<p>three.js</p>
+</blockquote>
+ <img title="globe_of_economic_complexity" alt="globe_of_economic_complexity" src="http://oi6lwj85c.bkt.clouddn.com/static/images/globe_of_economic_complexity_1.png">
+ <img title="globe_of_economic_complexity" alt="globe_of_economic_complexity" src="http://oi6lwj85c.bkt.clouddn.com/static/images/globe_of_economic_complexity_3.png">
+</li>
+<li><p><a href="http://senseable.mit.edu/louvre/#viz" target="_blank" rel="external">Art Traffic at the Louvre</a></p>
+<blockquote>
+<p>three.js , d3</p>
+</blockquote>
+ <img title="art_traffic_at_the_louvre" alt="art_traffic_at_the_louvre" src="http://oi6lwj85c.bkt.clouddn.com/static/images/art_traffic_at_the_louvre.png">    
+</li>
+<li><p><a href="http://www.tampabay.com/projects/2016/breaking-news/orlando-nightclub-shooting/choice-chance-3d-map/" target="_blank" rel="external">Choice and chance</a></p>
+<blockquote>
+<p>three.js</p>
+</blockquote>
+ <img title="Choice_and_chance" alt="Choice_and_chance" src="http://oi6lwj85c.bkt.clouddn.com/static/images/Choice_and_chance.png">
+</li>
+<li><p><a href="https://www.clicktorelease.com/code/blocky_earth/" target="_blank" rel="external">Blocky Earth</a></p>
+<blockquote>
+<p>three.js , google APIs</p>
+</blockquote>
+ <img title="blocky_earth" alt="blocky_earth" src="http://oi6lwj85c.bkt.clouddn.com/static/images/blocky_earth.png">
+</li>
+<li><p><a href="http://moonbear.animalsasia.org/ie/" target="_blank" rel="external">月熊志</a></p>
+<blockquote>
+<p>three.js<br>introduction: <a href="http://www.logicdesign.cn/project/moombear_website/" target="_blank" rel="external">http://www.logicdesign.cn/project/moombear_website/</a> ,</p>
+<pre><code>http://www.csdn.net/article/a/2013-12-25/15817546
+</code></pre></blockquote>
+</li>
+<li><p><a href="http://www.senchalabs.org/philogl/PhiloGL/examples/worldFlights/" target="_blank" rel="external">World Flights</a></p>
+<blockquote>
+<p>PhiloGL is a WebGL Framework for Data Visualization, Creative Coding and Game Development.<br>github: <a href="https://github.com/senchalabs/philogl" target="_blank" rel="external">https://github.com/senchalabs/philogl</a><br>introduction: <a href="http://www.senchalabs.org/philogl/" target="_blank" rel="external">http://www.senchalabs.org/philogl/</a></p>
+</blockquote>
+ <img title="World_Flights" alt="World_Flights" src="http://oi6lwj85c.bkt.clouddn.com/static/images/World_Flights.png">
+</li>
+</ol>
+<ol>
+<li><p><a href="https://earth.nullschool.net/" target="_blank" rel="external">earth :: a global map of wind, weather, and ocean conditions</a></p>
+<blockquote>
+<p>???</p>
+</blockquote>
+ <img title="earth" alt="earth" src="http://oi6lwj85c.bkt.clouddn.com/static/images/earth.png">
+ <img title="earth_air" alt="earth_air" src="http://oi6lwj85c.bkt.clouddn.com/static/images/earth_air.png">
+ <img title="earth_ocean" alt="earth_ocean" src="http://oi6lwj85c.bkt.clouddn.com/static/images/earth_ocean.png">
+</li>
+<li><p><a href="https://www.ventusky.com" target="_blank" rel="external">VentuSky</a></p>
+<blockquote>
+<p>???</p>
+</blockquote>
+ <img title="Ventusky" alt="Ventusky" src="http://oi6lwj85c.bkt.clouddn.com/static/images/Ventusky.png">
+ <img title="Ventusky_降水" alt="Ventusky_降水" src="http://oi6lwj85c.bkt.clouddn.com/static/images/Ventusky_降水.png">
+</li>
+<li><p><a href="https://www.windytv.com" target="_blank" rel="external">Windytv</a>    </p>
+<blockquote>
+<p>???</p>
+</blockquote>
+ <img title="Windytv" alt="Windytv" src="http://oi6lwj85c.bkt.clouddn.com/static/images/Windytv.png">
+ <img title="Windytv2" alt="Windytv2" src="http://oi6lwj85c.bkt.clouddn.com/static/images/Windytv2.png">
+ <img title="Windytv3" alt="Windytv3" src="http://oi6lwj85c.bkt.clouddn.com/static/images/Windytv3.png">
+</li>
+<li><p><a href="http://osmbuildings.org/" target="_blank" rel="external">osmbuildings</a></p>
+<blockquote>
+<p>github: <a href="https://github.com/kekscom/osmbuildings/" target="_blank" rel="external">https://github.com/kekscom/osmbuildings/</a><br>OpenStreetMap , leaflet</p>
+</blockquote>
+ <img title="osmbuilding" alt="osmbuilding" src="http://oi6lwj85c.bkt.clouddn.com/static/images/osmbuilding.png">
+</li>
+<li><p><a href="http://vizicities.com/" target="_blank" rel="external">ViziCities</a></p>
+<blockquote>
+<p>github: <a href="https://github.com/UDST/vizicities" target="_blank" rel="external">https://github.com/UDST/vizicities</a><br>introduction: <a href="https://vimeo.com/channels/vizicities" target="_blank" rel="external">https://vimeo.com/channels/vizicities</a><br>OpenStreetMap , ???</p>
+</blockquote>
+ <img title="vizicities" alt="vizicities" src="http://oi6lwj85c.bkt.clouddn.com/static/images/vizicities.png">
+</li>
+<li><p><a href="https://mapzen.com/documentation/tangram/" target="_blank" rel="external">tangram</a></p>
+<blockquote>
+<p>github: <a href="https://github.com/tangrams/tangram" target="_blank" rel="external">https://github.com/tangrams/tangram</a><br>webgl , leaflet , OpenStreetMap</p>
+</blockquote>
+ <img title="tangrams" alt="tangrams" src="http://oi6lwj85c.bkt.clouddn.com/static/images/tangrams.png">
+</li>
+<li><p><a href="https://www.f4map.com/" target="_blank" rel="external">F4map</a></p>
+ <img title="F4map" alt="F4map" src="http://oi6lwj85c.bkt.clouddn.com/static/images/F4map.png">
+</li>
+</ol>
+<ol>
+<li><p><a href="http://code.waag.org/buildings/" target="_blank" rel="external">All buildings in the Netherlands</a></p>
+ <img title="All_buildings_in_the_Netherlands" alt="All_buildings_in_the_Netherlands" src="http://oi6lwj85c.bkt.clouddn.com/static/images/All_buildings_in_the_Netherlands.png">
+</li>
+</ol>
+<ol>
+<li><p><a href="http://roadstorome.moovellab.com/" target="_blank" rel="external">ROADS TO ROME</a></p>
+ <img title="Roads_to_Rome" alt="Roads_to_Rome" src="http://oi6lwj85c.bkt.clouddn.com/static/images/Roads_to_Rome.png">
+</li>
+<li><p><a href="http://arcticspills.wwf.ca" target="_blank" rel="external">Oil Spills in the Beaufort Sea</a></p>
+ <img title="Oil_Spills_in_the_Beaufort_Sea" alt="Oil_Spills_in_the_Beaufort_Sea" src="http://oi6lwj85c.bkt.clouddn.com/static/images/Oil_Spills_in_the_Beaufort_Sea.png">
+</li>
+</ol>
+<ol>
+<li><p><a href="https://taxi.imagework.com/" target="_blank" rel="external">NYC flight-taxi visualization</a></p>
+ <img title="NYC_flight_taxi_visualization" alt="NYC_flight_taxi_visualization" src="http://oi6lwj85c.bkt.clouddn.com/static/images/NYC_flight_taxi_visualization.png">
+</li>
+<li><p><a href="http://datastorytellinggroup.org/drivenow/" target="_blank" rel="external">Mapping 24 hours of car sharing</a></p>
+<blockquote>
+<p>D3.js</p>
+</blockquote>
+ <img title="Mapping_24_hours_of_car_sharing" alt="Mapping_24_hours_of_car_sharing" src="http://oi6lwj85c.bkt.clouddn.com/static/images/Mapping_24_hours_of_car_sharing.png">
+</li>
+<li><p><a href="http://urbica.co/velo/" target="_blank" rel="external">Bike share stats in Moscow, season 2014</a></p>
+<blockquote>
+<p>Yandex Maps API , D3.js</p>
+</blockquote>
+ <img title="Bike_share_stats_in_Moscow_2014" alt="Bike_share_stats_in_Moscow_2014" src="http://oi6lwj85c.bkt.clouddn.com/static/images/Bike_share_stats_in_Moscow_2014.png">
+ <img title="Bike_share_stats_in_Moscow_2014_Activity" alt="Bike_share_stats_in_Moscow_2014_Activity" src="http://oi6lwj85c.bkt.clouddn.com/static/images/Bike_share_stats_in_Moscow_2014_Activity.png">
+ <img title="Bike_share_stats_in_Moscow_2014_Timeline" alt="Bike_share_stats_in_Moscow_2014_Timeline" src="http://oi6lwj85c.bkt.clouddn.com/static/images/Bike_share_stats_in_Moscow_2014_Timeline.png">
+</li>
+<li><p><a href="http://urbica.co/bikes/" target="_blank" rel="external">Moscow bike share stats 2015</a></p>
+<blockquote>
+<p>github: <a href="https://github.com/urbica/bikes" target="_blank" rel="external">https://github.com/urbica/bikes</a><br>OpenStreetMap , D3.js</p>
+</blockquote>
+ <img title="Moscow_bike_share_stats_2015" alt="Moscow_bike_share_stats_2015" src="http://oi6lwj85c.bkt.clouddn.com/static/images/Moscow_bike_share_stats_2015.png">
+ <img title="Moscow_bike_share_stats_2015_2" alt="Moscow_bike_share_stats_2015_2" src="http://oi6lwj85c.bkt.clouddn.com/static/images/Moscow_bike_share_stats_2015_2.png">
+ <img title="Moscow_bike_share_stats_2015_3" alt="Moscow_bike_share_stats_2015_3" src="http://oi6lwj85c.bkt.clouddn.com/static/images/Moscow_bike_share_stats_2015_3.png">
+</li>
+<li><p><a href="http://mbtaviz.github.io/" target="_blank" rel="external">Visualizing MBTA Data</a></p>
+<blockquote>
+<p>github: <a href="https://github.com/mbtaviz/mbtaviz.github.io/" target="_blank" rel="external">https://github.com/mbtaviz/mbtaviz.github.io/</a><br>introduction: <a href="https://github.com/mbtaviz/mbtaviz.github.io/wiki" target="_blank" rel="external">https://github.com/mbtaviz/mbtaviz.github.io/wiki</a><br>d3</p>
+</blockquote>
+ <img title="Visualizing_MBTA_Data" alt="Visualizing_MBTA_Data" src="http://oi6lwj85c.bkt.clouddn.com/static/images/Visualizing_MBTA_Data.png">
+</li>
+<li><p><a href="http://wearedata.watchdogs.com/" target="_blank" rel="external">watchdogs</a></p>
+ <img title="Watch_Dogs_WeAreData" alt="Watch_Dogs_WeAreData" src="http://oi6lwj85c.bkt.clouddn.com/static/images/Watch_Dogs_WeAreData.png">
+</li>
+</ol>
+<ol>
+<li><p><a href="http://sorting.at" target="_blank" rel="external">SORTING</a></p>
+ <img title="SORTING" alt="SORTING" src="http://oi6lwj85c.bkt.clouddn.com/static/images/SORTING.png">
+</li>
+<li><p><a href="https://visualgo.net/" target="_blank" rel="external">VisuAlgo</a></p>
+ <img title="VisuAlgo" alt="VisuAlgo" src="http://oi6lwj85c.bkt.clouddn.com/static/images/VisuAlgo.png">
+</li>
+</ol>
+<h3 id="系列专题"><a href="#系列专题" class="headerlink" title="系列专题"></a>系列专题</h3><h4 id="交通专题"><a href="#交通专题" class="headerlink" title="交通专题"></a>交通专题</h4><ol>
+<li><p><a href="https://taxi.imagework.com/" target="_blank" rel="external">NYC flight-taxi visualization</a></p>
+</li>
+<li><p><a href="http://datastorytellinggroup.org/drivenow/" target="_blank" rel="external">Mapping 24 hours of car sharing</a></p>
+</li>
+<li><p><a href="http://urbica.co/velo/" target="_blank" rel="external">Bike share stats in Moscow, season 2014</a></p>
+</li>
+<li><p><a href="http://urbica.co/bikes/" target="_blank" rel="external">Moscow bike share stats 2015</a></p>
+</li>
+<li><p><a href="http://mbtaviz.github.io/" target="_blank" rel="external">Visualizing MBTA Data</a></p>
+</li>
+</ol>
+<h4 id="数字城市专题"><a href="#数字城市专题" class="headerlink" title="数字城市专题"></a>数字城市专题</h4><ol>
+<li><p><a href="http://osmbuildings.org/" target="_blank" rel="external">osmbuildings</a></p>
+</li>
+<li><p><a href="http://wearedata.watchdogs.com/" target="_blank" rel="external">watchdogs</a></p>
+</li>
+</ol>
+<h4 id="气候可视化"><a href="#气候可视化" class="headerlink" title="气候可视化"></a>气候可视化</h4><ol>
+<li><p><a href="https://earth.nullschool.net/" target="_blank" rel="external">earth :: a global map of wind, weather, and ocean conditions</a>  </p>
+</li>
+<li><p><a href="https://www.ventusky.com" target="_blank" rel="external">VentuSky</a></p>
+</li>
+<li><p><a href="https://www.windytv.com" target="_blank" rel="external">Windytv</a></p>
+</li>
+</ol>
+<h4 id="算法可视化"><a href="#算法可视化" class="headerlink" title="算法可视化"></a>算法可视化</h4><ol>
+<li><p><a href="http://sorting.at" target="_blank" rel="external">SORTING</a></p>
+</li>
+<li><p><a href="https://visualgo.net/" target="_blank" rel="external">VisuAlgo</a></p>
+</li>
+</ol>
+<h3 id="技术专题"><a href="#技术专题" class="headerlink" title="技术专题"></a>技术专题</h3><h4 id="three-js"><a href="#three-js" class="headerlink" title="three.js"></a>three.js</h4><ol>
+<li><a href="http://globe.cid.harvard.edu/" target="_blank" rel="external">The globe of economic complexity-全球经济</a></li>
+<li><a href="https://www.clicktorelease.com/code/blocky_earth/" target="_blank" rel="external">Blocky Earth</a></li>
+</ol>
+<h4 id="arcgis-leaflet"><a href="#arcgis-leaflet" class="headerlink" title="arcgis / leaflet"></a>arcgis / leaflet</h4><ol>
+<li><a href="http://osmbuildings.org/" target="_blank" rel="external">osmbuildings</a></li>
+</ol>
+<h3 id="专题网站"><a href="#专题网站" class="headerlink" title="专题网站"></a>专题网站</h3><h4 id="墙里"><a href="#墙里" class="headerlink" title="墙里"></a>墙里</h4><ol>
+<li><p><strong><a href="http://djchina.org/" target="_blank" rel="external">数据新闻</a></strong></p>
+</li>
+<li><p><a href="http://www.geoq.cn/atlas.html" target="_blank" rel="external">智图地图集</a></p>
+</li>
+<li><p><a href="http://www.aliresearch.com/blog.html" target="_blank" rel="external">阿里研究院</a></p>
+</li>
+</ol>
+<h4 id="墙外"><a href="#墙外" class="headerlink" title="墙外"></a>墙外</h4><ol>
+<li><p><a href="https://carto.com/gallery/" target="_blank" rel="external">CartoDB Map Gallery</a></p>
+</li>
+<li><p><a href="http://geohub.lacity.org/" target="_blank" rel="external">GeoHub</a></p>
+</li>
+<li><p><a href="http://senseable.mit.edu/" target="_blank" rel="external">MIT Senseable City Lab</a></p>
+</li>
+</ol>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[数据汇源]]></title>
+      <url>http://dyh333.me/2017/01/17/%E6%95%B0%E6%8D%AE%E6%B1%87%E6%BA%90.html</url>
+      <content type="html"><![CDATA[<h3 id="地理数据"><a href="#地理数据" class="headerlink" title="地理数据"></a>地理数据</h3><h4 id="全球范围"><a href="#全球范围" class="headerlink" title="全球范围"></a>全球范围</h4><ol>
+<li><p><strong><a href="https://www.openstreetmap.org" target="_blank" rel="external">OpenStreetMap</a></strong><br> OpenStreetMap（简称OSM）是一个网上地图协作计划，目标是创造一个内容自由且能让所有人编辑的世界地图。用户在OSM上可以免费获取不同级别和精度的GIS数据。</p>
+</li>
+<li><p><a href="http://www.gadm.org/" target="_blank" rel="external">Global Administrative Areas</a><br> 全球行政区数据库</p>
+</li>
+<li><p><a href="https://webresourcesdepot.com/all-free-vector-world-maps-ai-eps-svg/" target="_blank" rel="external">SVG-EPS地图</a></p>
+</li>
+<li><p><a href="http://www.diva-gis.org/Data" target="_blank" rel="external">Diva GIS</a><br> Diva GIS包含全球各个国家的基础地理数据——<em>边界</em>、<em>铁路</em>、<em>道路</em>、<em>气候</em>、<em>生物多样性</em>以及<em>农作物</em>等。</p>
+</li>
+<li><p><a href="http://geodata.grid.unep.ch" target="_blank" rel="external">UNEP Environmental Data Explorer</a><br> UNEP包含全球范围内500多种不同类型的空间和非空间数据，如<em>淡水</em>、<em>人口</em>、<em>森林</em>、<em>污染排放</em>、<em>气候</em>、<em>灾害</em>、<em>卫生</em>和<em>国内生产总值</em>等。</p>
+</li>
+<li><p><a href="http://sedac.ciesin.columbia.edu" target="_blank" rel="external">NASA’s Socioeconomic Data and Applications Center (SEDAC)</a><br> SEDAC提供全球范围内的GIS数据以帮助人们了解人与环境间的相互影响。数据涉及<em>农业</em>、<em>气候</em>、<em>健康</em>、<em>基础设施</em>、<em>土地利用</em>、<em>海洋和沿海</em>、<em>人口</em>、<em>贫困</em>、<em>可持续性</em>、<em>城市和水</em>等15种类型。</p>
+</li>
+<li><p><a href="http://www.naturalearthdata.com/" target="_blank" rel="external">Natural Earth Data</a><br> Natural Earth Data提供了全球范围内的矢量和影像数据。Natural Earth Data的最大优势就是数据是开放性的，用户有传播和修改数据的权限。</p>
+</li>
+<li><p><a href="http://www.fao.org/geonetwork/srv/en/main.home" target="_blank" rel="external">FAO GeoNetwork</a><br> FAO是一个全球地理信息系统数据集，通过它你可以下载到<em>农业</em>、<em>渔业</em>、<em>土地资源</em>相关的GIS数据，同时它提供相关卫星图像数据。</p>
+</li>
+<li><p><a href="http://www.iscgm.org" target="_blank" rel="external">ISCGM Global Map</a><br> ISCGM提供的数据种类包括<em>全球土地</em>和<em>森林覆盖</em>数据集。同时一些文化和自然矢量数（<em>边界</em>、<em>排水</em>、<em>交通</em>、<em>人口中心</em>、<em>海拔</em>、<em>土地覆盖</em>、<em>土地利用</em>和<em>植被</em>）也能在这里获取。</p>
+</li>
+</ol>
+<h4 id="全国范围"><a href="#全国范围" class="headerlink" title="全国范围"></a>全国范围</h4><ol>
+<li><p><a href="http://www.envicloud.cn/pages/index.html" target="_blank" rel="external">环境云</a><br> 含：<em>城市位置数据</em>、<em>坐标范围数据</em>、<em>城市编码数据</em></p>
+</li>
+<li><p><a href="http://www.geodata.cn/" target="_blank" rel="external">国家地球系统科学数据共享平台</a></p>
+</li>
+</ol>
+<h3 id="遥感-卫星影像数据"><a href="#遥感-卫星影像数据" class="headerlink" title="遥感/卫星影像数据"></a>遥感/卫星影像数据</h3><ol>
+<li><p><a href="http://ids.ceode.ac.cn/index.aspx" target="_blank" rel="external">中国科学院遥感与数字地球研究所</a></p>
+</li>
+<li><p><a href="http://earthexplorer.usgs.gov" target="_blank" rel="external">USGS Earth Explorer</a><br> 美国地质勘探局（United States Geological Survey，简称USGS），是美国内政部所属的科学研究机构。其官网上提供最新、最全面的全球卫星影像，包括Landsat、Modis等。</p>
+</li>
+<li><p><a href="http://www.opentopography.org" target="_blank" rel="external">Open Topography</a><br> Open Topography是一个提供高空间分辨率的地形数据和操作工具的门户网站。通过Open Topography，用户可以下载LiDAR数据（主要包括：美国、加拿大、澳大利亚、巴西、海地、墨西哥和波多黎各）。</p>
+</li>
+<li><p><a href="http://www.fao.org/geonetwork/srv/en/main.home" target="_blank" rel="external">FAO GeoNetwork</a><br> FAO是一个全球地理信息系统数据集，通过它你可以下载到<em>农业</em>、<em>渔业</em>、<em>土地资源</em>相关的GIS数据，同时它提供相关卫星图像数据。</p>
+</li>
+<li><p><a href="http://neo.sci.gsfc.nasa.gov" target="_blank" rel="external">NASA Earth Observations (NEO)</a><br> NEO专注于提供全球范围内的卫星影像（大气、能源、土地、生活、海洋等50多种不同数据专题）。通过NEO可以查看地球气候和环境状况的每日快照。</p>
+</li>
+</ol>
+<h3 id="交通数据"><a href="#交通数据" class="headerlink" title="交通数据"></a>交通数据</h3><h3 id="环境数据"><a href="#环境数据" class="headerlink" title="环境数据"></a>环境数据</h3><ol>
+<li><p><a href="http://www.envicloud.cn/pages/index.html" target="_blank" rel="external">环境云</a><br> <em>水体环境数据</em>、<em>大气环境数据</em>、<em>污染排放数据</em>、<em>大气辐射数据</em>、<em>空气质量数据</em></p>
+</li>
+<li><p><a href="http://air-level.com" target="_blank" rel="external">空气知音</a><br> <em>空气质量指数</em>、<em>空气质量排行榜</em></p>
+</li>
+<li><p><a href="http://datacenter.mep.gov.cn/" target="_blank" rel="external">中华人民共和国环境保护部数据中心</a></p>
+</li>
+</ol>
+<ul>
+<li><a href="http://datacenter.mep.gov.cn/report/getCountGraph.do?type=runQianWater" target="_blank" rel="external">全国主要流域重点断面水质自动监测周报</a>  </li>
+<li><a href="http://datacenter.mep.gov.cn/report/hjtj/water/water_timeAnalys.jsp" target="_blank" rel="external">自定义水质级别分析</a></li>
+<li><a href="http://datacenter.mep.gov.cn/report//water/report_52weeks_waterplace_new1_period.jsp" target="_blank" rel="external">水质监测因子分析－任意时间段</a></li>
+<li><a href="http://datacenter.mep.gov.cn/report/air_daily/nationAir_unclearRadiation.jsp" target="_blank" rel="external">全国辐射环境自动监测站空气吸收剂量率</a></li>
+<li><a href="http://datacenter.mep.gov.cn/report/air_daily/nationAir_unclearStation.jsp" target="_blank" rel="external">我国运行核电站周围环境空气吸收剂量率</a> </li>
+</ul>
+<h3 id="气象数据"><a href="#气象数据" class="headerlink" title="气象数据"></a>气象数据</h3><ol>
+<li><a href="http://www.envicloud.cn/pages/index.html" target="_blank" rel="external">环境云</a><br> <em>天气预报数据</em>、<em>海区天气预报数据</em>、<em>历史天气数据</em>、<em>天气实况数据</em></li>
+</ol>
+<h3 id="灾害数据"><a href="#灾害数据" class="headerlink" title="灾害数据"></a>灾害数据</h3><ol>
+<li><a href="http://www.envicloud.cn/pages/index.html" target="_blank" rel="external">环境云</a><br> <em>地质灾害数据</em>、<em>气象灾害数据</em>、<em>灾害预警数据</em></li>
+</ol>
+<h3 id="统计数据"><a href="#统计数据" class="headerlink" title="统计数据"></a>统计数据</h3><ol>
+<li><p><a href="http://data.stats.gov.cn/index.htm" target="_blank" rel="external">国家数据</a><br> 中华人民共和国国家统计局提供的各类统计数据</p>
+</li>
+<li><p><a href="http://www.stats.gov.cn/tjsj/" target="_blank" rel="external">统计局统计数据</a><br> 中华人民共和国国家统计局官网</p>
+</li>
+</ol>
+<h3 id="综合数据"><a href="#综合数据" class="headerlink" title="综合数据"></a>综合数据</h3><ol>
+<li><p><a href="http://www.envicloud.cn/pages/index.html" target="_blank" rel="external">环境云</a></p>
+ <img title="数据服务" alt="数据服务" src="http://oi6lwj85c.bkt.clouddn.com/static/images/环境云.png">
+</li>
+<li><p><a href="http://www.bjdata.gov.cn/" target="_blank" rel="external">北京市政府数据资源网</a></p>
+</li>
+<li><p><a href="http://www.datashanghai.gov.cn/" target="_blank" rel="external">上海市政府数据服务网</a></p>
+ <img title="数据领域" alt="数据领域" src="http://oi6lwj85c.bkt.clouddn.com/static/images/上海市政府数据服务网.png">
+</li>
+<li><p><a href="https://www.juhe.cn/" target="_blank" rel="external">聚合数据</a></p>
+ <img title="API分类" alt="API分类" src="http://oi6lwj85c.bkt.clouddn.com/static/images/聚合数据.png">
+</li>
+<li><p><a href="http://www.datatang.com/index.html" target="_blank" rel="external">数据堂</a>    </p>
+ <img title="数据商城" alt="数据商城" src="http://oi6lwj85c.bkt.clouddn.com/static/images/数据堂.png">
+</li>
+</ol>
+<h3 id="三维模型数据"><a href="#三维模型数据" class="headerlink" title="三维模型数据"></a>三维模型数据</h3><ol>
+<li><a href="http://www.cybercity3d.com/products" target="_blank" rel="external">CyberCity 3D</a> <img title="cybercity_3d_sample_data" alt="cybercity_3d_sample_data" src="http://oi6lwj85c.bkt.clouddn.com/static/images/cybercity_3d_sample_data.png">   
+</li>
+</ol>
+<h3 id="参考列表"><a href="#参考列表" class="headerlink" title="参考列表"></a>参考列表</h3><ol>
+<li><a href="http://mp.weixin.qq.com/s?__biz=MjM5MDI2NjI0NQ==&amp;mid=401531378&amp;idx=1&amp;sn=49ecee337c955c2a6a6a9b7367789341#rd" target="_blank" rel="external">免费GIS数据下载网站推荐</a></li>
+<li><a href="http://djchina.org/2013/11/24/open-data-source/" target="_blank" rel="external">数据新闻-开放数据资源</a></li>
+</ol>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[杜牧]]></title>
+      <url>http://dyh333.me/2017/01/16/%E6%9D%9C%E7%89%A7.html</url>
+      <content type="html"><![CDATA[<p>杜牧（公元803－约852年），字牧之，号樊川居士，汉族，京兆万年（今陕西西安）人，唐代诗人。杜牧人称“小杜”，以别于杜甫。与李商隐并称“小李杜”。因晚年居长安南樊川别墅，故后世称“杜樊川”，著有《樊川文集》。</p>
+<h3 id="盆池"><a href="#盆池" class="headerlink" title="盆池"></a>盆池</h3><blockquote><p>凿破苍苔地，偷他一片天。<br><strong>白云生镜里，明月落阶前。</strong></p>
+</blockquote>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[李商隐]]></title>
+      <url>http://dyh333.me/2017/01/16/%E6%9D%8E%E5%95%86%E9%9A%90.html</url>
+      <content type="html"><![CDATA[<p>李商隐，字义山，号玉溪（谿）生、樊南生，唐代著名诗人，祖籍河内（今河南省焦作市）沁阳，出生于郑州荥阳。他擅长诗歌写作，骈文文学价值也很高，是晚唐最出色的诗人之一，和杜牧合称“小李杜”，与温庭筠合称为“温李”，因诗文与同时期的段成式、温庭筠风格相近，且三人都在家族里排行第十六，故并称为“三十六体”。其诗构思新奇，风格秾丽，尤其是一些爱情诗和无题诗写得缠绵悱恻，优美动人，广为传诵。但部分诗歌过于隐晦迷离，难于索解，至有“诗家总爱西昆好，独恨无人作郑笺”之说。因处于牛李党争的夹缝之中，一生很不得志。死后葬于家乡沁阳（今河南焦作市沁阳与博爱县交界之处）。作品收录为《李义山诗集》。</p>
+<h3 id="东下三旬苦于风土马上戏作"><a href="#东下三旬苦于风土马上戏作" class="headerlink" title="东下三旬苦于风土马上戏作"></a>东下三旬苦于风土马上戏作</h3><blockquote><p>路绕函关东复东，身骑征马逐惊蓬。<br>天池辽阔谁相待，日日虚乘九万风。</p>
+</blockquote>]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[[转载]反手拉出台下旋球实用技巧]]></title>
+      <url>http://dyh333.me/2016/12/27/%E8%BD%AC%E8%BD%BD-%E5%8F%8D%E6%89%8B%E6%8B%89%E5%87%BA%E5%8F%B0%E4%B8%8B%E6%97%8B%E7%90%83%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7.html</url>
+      <content type="html"><![CDATA[<ol>
+<li><p>在引拍的时候身体重心要比拨球时往下降，可以通过双腿叉开的大一点、双膝弯曲的厉害一点来实现。</p>
+</li>
+<li><p>引拍一定要放到台面以下，通过自然地打开大小臂之间的夹角来实现。</p>
+</li>
+<li><p>三是引拍时的拍头要向下，手腕自然内收，前臂自然内旋，板形适度前倾。</p>
+</li>
+<li><p>拉球时左腿要用力向下蹬地，带动身体重心上移，内收的腹部顺势外展，带动前臂向上向前发力，前臂通过外旋，手腕通过由内收到外展，带动球拍给球一个向上向前的撞摩，把过来的下旋球拉过网落到对方台面上。</p>
+</li>
+</ol>
+<p><strong>注意事项</strong>：拉球的动作不要散要紧凑，发力要集中，腿部、腹部和前臂发力要协调，持拍手的肘部支撑要保证，要拉来球的中下部，高点击球和下降初期击球都可以。</p>
+<img title="反手拉出台下旋球" alt="反手拉出台下旋球" src="http://oi6lwj85c.bkt.clouddn.com/static/images/反手拉出台下旋球1.jpg">
+<img title="反手拉出台下旋球" alt="反手拉出台下旋球" src="http://oi6lwj85c.bkt.clouddn.com/static/images/反手拉出台下旋球2.jpg">
+<img title="反手拉出台下旋球" alt="反手拉出台下旋球" src="http://oi6lwj85c.bkt.clouddn.com/static/images/反手拉出台下旋球3.jpg">
+<blockquote>
+<p>作者：西窗烛<br>链接：<a href="http://www.pingpangwang.com/thread-102502-1-1.html" target="_blank" rel="external">http://www.pingpangwang.com/thread-102502-1-1.html</a><br>来源：乒乓网</p>
+</blockquote>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[[转载]业余爱好者打好乒乓球的29个要点]]></title>
+      <url>http://dyh333.me/2016/12/27/%E8%BD%AC%E8%BD%BD-%E4%B8%9A%E4%BD%99%E7%88%B1%E5%A5%BD%E8%80%85%E6%89%93%E5%A5%BD%E4%B9%92%E4%B9%93%E7%90%83%E7%9A%8429%E4%B8%AA%E8%A6%81%E7%82%B9.html</url>
+      <content type="html"><![CDATA[<h3 id="1-接发球预动"><a href="#1-接发球预动" class="headerlink" title="1. 接发球预动"></a>1. 接发球预动</h3><p>对方一抛球，这一回合就开始了，而不是球落到自己球台上才开始。所以对方一抛球，重心与脚步就要动起来。</p>
+<h3 id="2-让球更转的方法"><a href="#2-让球更转的方法" class="headerlink" title="2. 让球更转的方法"></a>2. 让球更转的方法</h3><p>尽量用拍头位置触球磨擦，会增加旋转。还可以增加球速与力量。大多数业余球手有时蒙到了板头，拉出来球挺转，可是不知道为什么挺转。</p>
+<h3 id="3-还原时，球拍放哪里？"><a href="#3-还原时，球拍放哪里？" class="headerlink" title="3. 还原时，球拍放哪里？"></a>3. 还原时，球拍放哪里？</h3><p>尽量放到身前，和接发球时一样。有时根据预判或球速可以省略，但意识里一定得有放身前。就像打字时，F，J两键的作用。</p>
+<h3 id="4-直板双反打法，大拇指很重要"><a href="#4-直板双反打法，大拇指很重要" class="headerlink" title="4. 直板双反打法，大拇指很重要"></a>4. 直板双反打法，大拇指很重要</h3><p>直板有横打的，大拇指压拍肩，最关键，对调整板形至关重要。</p>
+<h3 id="5-回搓的下旋球"><a href="#5-回搓的下旋球" class="headerlink" title="5. 回搓的下旋球"></a>5. 回搓的下旋球</h3><p>如果你发下旋很转，对方搓过来，弧线很低的话，会更转。起弧圈时，要调板子，多亮一些，动作要更紧凑一些。</p>
+<h3 id="6-不规则的推挡"><a href="#6-不规则的推挡" class="headerlink" title="6. 不规则的推挡"></a>6. 不规则的推挡</h3><p>很多业余直板推挡，多少都有不规则的挤压的动作，想拉这样的来球时，要用腰向上发点力，才能保证过网。</p>
+<h3 id="7-接短重下旋站位问题"><a href="#7-接短重下旋站位问题" class="headerlink" title="7. 接短重下旋站位问题"></a>7. 接短重下旋站位问题</h3><p>总下网，是你的站位问题。站位适当向前站一点点，哪怕近小半步，就会有效果。</p>
+<h3 id="8-不击球时，手臂越软越好"><a href="#8-不击球时，手臂越软越好" class="headerlink" title="8. 不击球时，手臂越软越好"></a>8. 不击球时，手臂越软越好</h3><p>打完一个球，手臂软下来，越软越好。你感觉能够像面条一样软软地放在身前，那就好极了。不要担心下一个动作，不要担心发不出力。相反，发力会更好。</p>
+<h3 id="9-不同来球，击球部位不同"><a href="#9-不同来球，击球部位不同" class="headerlink" title="9. 不同来球，击球部位不同"></a>9. 不同来球，击球部位不同</h3><p>上旋球击球的中上部甚至顶部，不转球击球的中部，下旋球击球的中下部或者下部。</p>
+<h3 id="10-不同旋转球，引拍高低不同"><a href="#10-不同旋转球，引拍高低不同" class="headerlink" title="10. 不同旋转球，引拍高低不同"></a>10. 不同旋转球，引拍高低不同</h3><p>上旋来球引拍可以和球台平行时就可以，下旋来球引拍可以深一些。</p>
+<h3 id="11-对长胶选手多发不转球"><a href="#11-对长胶选手多发不转球" class="headerlink" title="11. 对长胶选手多发不转球"></a>11. 对长胶选手多发不转球</h3><p>不转发球，长胶无法借力。长胶选手处理不转发球难度最大。</p>
+<h3 id="12-平时练球，不要四平八稳"><a href="#12-平时练球，不要四平八稳" class="headerlink" title="12. 平时练球，不要四平八稳"></a>12. 平时练球，不要四平八稳</h3><p>大，中，小发力都搞一搞。前后左右都打一打。最忌讳两人站定一点，四平八稳打半天。除起热身效果外，涨球无用。</p>
+<h3 id="13-手腕触球时的“紧”一下"><a href="#13-手腕触球时的“紧”一下" class="headerlink" title="13. 手腕触球时的“紧”一下"></a>13. 手腕触球时的“紧”一下</h3><p>手腕触球时“紧”一下，绷住劲儿，然后外展或者内收释放，球会更稳定，更转，内劲更大一些。</p>
+<h3 id="14-“内收”，“手腕绷住”与“外展”。"><a href="#14-“内收”，“手腕绷住”与“外展”。" class="headerlink" title="14. “内收”，“手腕绷住”与“外展”。"></a>14. “内收”，“手腕绷住”与“外展”。</h3><p>正手拉球与反手拉球一样，都需要有“内收”，“手腕绷住”与“外展”。反手是先内收，再外展，正手是先外展，再内收。反手都知道先内收（内屈）手腕，然后外展，尤其是台内拧拉；正手则往往会忽略。</p>
+<h3 id="15-对付防守打法，一定要注意迎前"><a href="#15-对付防守打法，一定要注意迎前" class="headerlink" title="15. 对付防守打法，一定要注意迎前"></a>15. 对付防守打法，一定要注意迎前</h3><p>严格按脚掌着力，收点小腹，重心前倾。从后向前扑着拉，扑着搓，推等。否则：不是下网就是出界，相当于够着打，打不到合适的击球部位。</p>
+<h3 id="16-加转弧圈球"><a href="#16-加转弧圈球" class="headerlink" title="16. 加转弧圈球"></a>16. 加转弧圈球</h3><p>对于加转弧圈，弧线高于网时，可以发力敲击，侧身暴打；弧线平于球网或者低于球网，最合理的是减力贴，或者迎前反撕等，根据你的技术特点来。</p>
+<h3 id="17-“变了可能还是死，也可能活”"><a href="#17-“变了可能还是死，也可能活”" class="headerlink" title="17. “变了可能还是死，也可能活”"></a>17. “变了可能还是死，也可能活”</h3><p>如果这个球你发力总是失误，就要减点力，或者改变击球方式。一味地不知改变不是聪明的打法，但往往比赛里你会一根筋，或者按既有习惯打，这是不行的。要想赢球，必须改变。“不变肯定死”，“变了可能还是死，也可能活”。</p>
+<h3 id="18-最管用的套路往往是最简单的套路"><a href="#18-最管用的套路往往是最简单的套路" class="headerlink" title="18. 最管用的套路往往是最简单的套路"></a>18. 最管用的套路往往是最简单的套路</h3><p>关键时候，把球打简单一些。最管用的套路往往是最简单的套路。</p>
+<h3 id="19-不要浪费“暂停”"><a href="#19-不要浪费“暂停”" class="headerlink" title="19. 不要浪费“暂停”"></a>19. 不要浪费“暂停”</h3><p>暂停有奇特的作用。一场只有一个暂停，很宝贵。不要浪费“暂停”，把它于在关键的时候。</p>
+<h3 id="20-咬分时，内心要有积极的心理暗示"><a href="#20-咬分时，内心要有积极的心理暗示" class="headerlink" title="20. 咬分时，内心要有积极的心理暗示"></a>20. 咬分时，内心要有积极的心理暗示</h3><p>“我行！”“相信自己！”，内心里这样的声音，会产生积极的良好的暗示，在同等水平，或者以弱战强时，会起到奇特的效果。</p>
+<h3 id="21-反手"><a href="#21-反手" class="headerlink" title="21. 反手"></a>21. 反手</h3><p>反手的优势是动作小，还原快。</p>
+<h3 id="22-直板横打能发力，能磨擦就可以"><a href="#22-直板横打能发力，能磨擦就可以" class="headerlink" title="22. 直板横打能发力，能磨擦就可以"></a>22. 直板横打能发力，能磨擦就可以</h3><p>由于参杂着发力肌肉群问题，横打再牛，也不可能发出正手那样的力量，不要过度追求横打，那样可能会坏了你的脚步。王皓也是能侧身就侧身，能用正手就用正手。弧圈的重点是正手，尤其是业余，不要怀疑。</p>
+<h3 id="23-重心击球没那么神秘"><a href="#23-重心击球没那么神秘" class="headerlink" title="23. 重心击球没那么神秘"></a>23. 重心击球没那么神秘</h3><p>双脚平衡时，重心就是左腰右腰与肚子前的那片空间，向右偏时，重心就是右腰前侧那片空间，反之，左腰前那片空间。重心击球就是脚下蹬那么一下，腰内里挺那么一下，力向上发出，在可控的重心范围内击球，胳膊与手腕手指等传递力并再产生小力，主要是负责磨擦与方向。</p>
+<h3 id="24-防守时，重心先顶住来球"><a href="#24-防守时，重心先顶住来球" class="headerlink" title="24. 防守时，重心先顶住来球"></a>24. 防守时，重心先顶住来球</h3><p>防守时，用重心先顶住来球，要稳定厚重得多。</p>
+<h3 id="25-打球并不是越快越好"><a href="#25-打球并不是越快越好" class="headerlink" title="25. 打球并不是越快越好"></a>25. 打球并不是越快越好</h3><p>越快越容易增加失误，合理控制速度，快慢结合掌控节奏，是最高级的打法。</p>
+<h3 id="26-制造上旋是反胶核心"><a href="#26-制造上旋是反胶核心" class="headerlink" title="26. 制造上旋是反胶核心"></a>26. 制造上旋是反胶核心</h3><p>磨擦制造上旋，磨擦制造弧线，反胶核心就是制造上旋。</p>
+<h3 id="27-规避侧旋"><a href="#27-规避侧旋" class="headerlink" title="27. 规避侧旋"></a>27. 规避侧旋</h3><p>接左侧旋球，可以朝对方右方，接右侧旋球，可以朝对方左方，可以规避侧旋。对于强烈侧旋的发球，不要顺转。</p>
+<h3 id="28-侧上发球与转不转"><a href="#28-侧上发球与转不转" class="headerlink" title="28. 侧上发球与转不转"></a>28. 侧上发球与转不转</h3><p>很多业余处理不好侧上与转不转球，可以着重练习侧上发球与转不转。尤其是不转发球，软且飘且不转的发球，因为借不上力，弧线低，业余普遍接不太好。侧上，要有强烈侧奔与强烈上两种变化。很多人要么处理不好侧旋度，要么处理不好上旋度。</p>
+<h3 id="29-有条件练多球的话，不要放过"><a href="#29-有条件练多球的话，不要放过" class="headerlink" title="29. 有条件练多球的话，不要放过"></a>29. 有条件练多球的话，不要放过</h3><p>多球是夯实基本功的最好方式。哪怕是球友互助，哪怕多球发得再不好，但多球就是多球，最高效的方式。</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[[转载]Using the ArcGIS API for JavaScript in Applications built with webpack]]></title>
+      <url>http://dyh333.me/2016/12/25/%E8%BD%AC%E8%BD%BD-Using-the-ArcGIS-API-for-JavaScript-in-Applications-built-with-webpack.html</url>
+      <content type="html"><![CDATA[<p>It seems like webpack is becoming the most popular module bundler in the Angular 2 and React communities. It is not (yet) possible to have webpack directly load modules from the ArcGIS API For JavaScript. However, the ArcGIS developer community has come up a couple innovative workarounds that make it easy to add ArcGIS maps and services to applications built with webpack. Unfortunately I’ve seen a few developers run into trouble because they don’t understand how these abstractions work.</p>
+<p>In this post, I’ll explain the hack that underlies these solutions and explore the pros and cons of two patterns for loading ArcGIS modules in applications that are built with a module bundler. Although most of the examples shown use webpack, the same patterns can be applied to rollup.js as well.</p>
+<h3 id="The-problem"><a href="#The-problem" class="headerlink" title="The problem"></a>The problem</h3><p>The ArcGIS API for JavaScript is written in Dojo and distributed as large library of AMD modules. Unfortunately, most module loaders, including webpack, implement the AMD “standard” differently than the way that Dojo does, specifically in the area of plugins. There is a Dojo loader for webpack that tries to address those differences, but as of time of writing it is not capable of loading ArcGIS modules. Even once that issue is resolved, I still think you’ll want to understand the workarounds below so you can decide which is the best solution for your application.</p>
+<h3 id="Solutions-you-can-use-today"><a href="#Solutions-you-can-use-today" class="headerlink" title="Solutions you can use today"></a>Solutions you can use today</h3><p>The ArcGIS developer community has come up with a few solutions to this problem that are based on a common underlying hack. In one form or another, all of these solutions:</p>
+<ol>
+<li>Exclude ArcGIS API modules from any bundling done by other module loaders</li>
+<li>Load the ArcGIS API for JavaScript via a script tag on the page</li>
+<li>Use Dojo’s global require() and define() functions to load ArcGIS modules</li>
+</ol>
+<p>You can of course do all of that without any special library. The libraries and boilerplates that developers have created provide varying amounts of syntactic sugar that hide this hack from developers. I’m going to group these solutions into 2 patterns and discuss the strengths and weaknesses of each.</p>
+<h3 id="Pattern-1-Dedicated-Loader-Module"><a href="#Pattern-1-Dedicated-Loader-Module" class="headerlink" title="Pattern 1: Dedicated Loader Module"></a>Pattern 1: Dedicated Loader Module</h3><p>This is the lowest level of abstraction around the above hack. The idea is that you have a single module in your application that acts as a thin wrapper around the global require() and also provides a method to lazy load the ArcGIS API (i.e. programmatically inject a script tag on the page). It looks something like this:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">// import the loader module</div><div class="line">import * as esriLoader from &apos;esri-loader&apos;;</div><div class="line">// then use Dojo&apos;s loader to require the map class</div><div class="line">esriLoader.dojoRequire([&apos;esri/map&apos;], (Map) =&gt; &#123;</div><div class="line">  // create map with the given options at a DOM node w/ id &apos;mapNode&apos;</div><div class="line">  let map = new Map(&apos;mapNode&apos;, &#123;</div><div class="line">    center: [-118, 34.5],</div><div class="line">    zoom: 8,</div><div class="line">    basemap: &apos;dark-gray&apos;</div><div class="line">  &#125;);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<h4 id="Benefits"><a href="#Benefits" class="headerlink" title="Benefits"></a>Benefits</h4><p>Helps enforce the best practice of pushing your dependencies (ArcGIS API for JavaScript), as well as the unsavory use of globals to the edge of your application<br>Only load the ArcGIS API for JavaScript on routes where it’s needed<br>Unit tests do not need to load the ArcGIS API for JavaScript; instead mock the loader service and any modules it would return</p>
+<h4 id="Challenges"><a href="#Challenges" class="headerlink" title="Challenges"></a>Challenges</h4><ul>
+<li>application developers need to understand the asynchronous nature of loading ArcGIS modules and use appropriate techniques such callbacks or promises not only when loading map data, but also when loading ArcGIS API modules</li>
+<li>you cannot use ES2015 import statements with this pattern</li>
+</ul>
+<h4 id="Examples"><a href="#Examples" class="headerlink" title="Examples"></a>Examples</h4><img title="Dedicated-Loader-Module" alt="Dedicated-Loader-Module" src="http://oi6lwj85c.bkt.clouddn.com/static/images/Dedicated-Loader-Module.png">
+<p><a href="https://github.com/tomwayson/esri-loader" target="_blank" rel="external">esri-loader</a> is a standalone library that implements this pattern and makes it available to any Angular 2 or React application.</p>
+<p><a href="https://github.com/tomwayson/angular2-esri-loader" target="_blank" rel="external">angular2-esri-loader</a> exposes an Angular 2 service that wraps the esri-loader functions in ones that return promises to make it easier to use in Angular 2 applications.</p>
+<p><a href="https://github.com/tomwayson/esri-angular-cli-example" target="_blank" rel="external">esri-angular-cli-example</a> is an example angular-cli<br>application that uses the angular2-esri-loader library to lazy load modules from the ArcGIS API for JavaScript only on the map route. This application also includes example unit tests that demonstrate how to mock the loader and modules.</p>
+<p><a href="https://github.com/davetimmins/create-react-app-esri-loader/" target="_blank" rel="external">esri-react-router-example</a> is an example react-router application that uses the esri-loader library to lazy load modules from the ArcGIS API for JavaScript only on the map route.</p>
+<p><a href="https://github.com/davetimmins/create-react-app-esri-loader/" target="_blank" rel="external">create-react-app-esri-loader</a> applies this pattern to the output of create-react-app.</p>
+<p>This pattern finds it’s roots in <a href="https://github.com/Esri/angular-esri-map" target="_blank" rel="external">angular-esri-map</a>, a library for using ArcGIS maps and services in Angular 1 applications.</p>
+<h3 id="Pattern-2-Exclude-and-Require"><a href="#Pattern-2-Exclude-and-Require" class="headerlink" title="Pattern 2: Exclude and Require"></a>Pattern 2: Exclude and Require</h3><p>This pattern provides a slightly higher level of abstraction around the above hack. The way it works has been well documented in this gist, and here are the key parts:</p>
+<ol>
+<li>Configure webpack to exclude the Dojo modules from the ArcGIS API for JavaScript</li>
+<li>Configure webpack to output the bundles themselves as AMD (or UMD) modules</li>
+<li>Load the ArcGIS API for JavaScript via a script tag</li>
+<li>Use the Dojo loader included in the ArcGIS API for JavaScript to require() the bundles</li>
+</ol>
+<p>Then in your application you can do something like:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">import Map from &apos;esri/Map&apos;</div><div class="line">let map = new Map(&apos;mapNode&apos;, &#123;</div><div class="line">  center: [-118, 34.5],</div><div class="line">  zoom: 8,</div><div class="line">  basemap: &apos;dark-gray&apos;</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<h4 id="Benefits-1"><a href="#Benefits-1" class="headerlink" title="Benefits"></a>Benefits</h4><p>Allows you to use ES2015 import statements<br>No need for asynchronous code (callbacks or Promises) to load ArcGIS modules</p>
+<h4 id="Challenges-1"><a href="#Challenges-1" class="headerlink" title="Challenges"></a>Challenges</h4><p>The (rather hefty) ArcGIS API for JavaScript will have to finish loading before the rest of your application can begin loading<br>Using ES2015 import statements confuses some developers who don’t understand where those modules are coming from<br>Existing unit test examples load the ArcGIS API for JavaScript in the test harness instead of mocking them<br>No one has figured out how to use it with angular-cli yet</p>
+<h4 id="Examples-1"><a href="#Examples-1" class="headerlink" title="Examples"></a>Examples</h4><img title="Exclude-and-Require" alt="Exclude-and-Require" src="http://oi6lwj85c.bkt.clouddn.com/static/images/Exclude-and-Require.png">
+<p>At the most basic level, this pattern is exemplified in the esri-webpack-typescript boilerplate. esri-webpack-babel is a fork of that boilerplate that uses Babel instead of TypeScript and includes inline comments and documentation on how it works.</p>
+<p><a href="https://github.com/tomwayson/angular2-esri-example" target="_blank" rel="external">angular2-esri-example</a> demonstrates how to use this pattern in an Angular 2 application.</p>
+<p>Similarly, esri-redux demonstrates how to use this pattern in an application built with React and Redux, and its predecessor, esri-flux-react, shows the same but with Flux instead of Redux.</p>
+<p>The configurations from those application are used in create-react-app-arcgis which applies this pattern to the output of create-react-app.</p>
+<p><a href="https://github.com/tomwayson/esri-rollup-example" target="_blank" rel="external">esri-rollup-example</a> is an example application that shows how to use this pattern with rollup.js instead of webpack.</p>
+<h3 id="FAQ"><a href="#FAQ" class="headerlink" title="FAQ"></a>FAQ</h3><h4 id="Which-pattern-is-right-for-me"><a href="#Which-pattern-is-right-for-me" class="headerlink" title="Which pattern is right for me?"></a>Which pattern is right for me?</h4><p>If your application doesn’t have a map in every route, and/or is targeting mobile browsers, you probably want to consider using the dedicated loader module pattern. Also, this is the only pattern that currently works in angular-cli.</p>
+<p>If you’re developing a map-centric application that primarily targets desktop browsers, the exclude and require pattern provides a clean abstraction that lets you import ArcGIS modules as you would modules from any other library.</p>
+<h4 id="What’s-the-catch"><a href="#What’s-the-catch" class="headerlink" title="What’s the catch?"></a>What’s the catch?</h4><p>Obviously relying on the global require() and define() functions isn’t exactly a best practice, and it’s the main source of risk in the above patterns. For example, because Ember.js defines these functions globally, the patterns demonstrated above won’t work in Ember.js applications. Thankfully ember-cli-amd provides an equivalent abstraction for working with ArcGIS API for JavaScript in Ember.js applications. So, as long as your application doesn’t use a library that relies on those globals, these patterns should work for you.</p>
+<p>As I mention above, the dedicated loader pattern has been battle tested in at least a few production Angular 1 applications. Also, there’s a good discussion about (the apparent lack of) limitations of the exclude and require pattern in this issue thread.</p>
+<h4 id="Will-we-need-these-patterns-once-dojo-webpack-loader-works"><a href="#Will-we-need-these-patterns-once-dojo-webpack-loader-works" class="headerlink" title="Will we need these patterns once dojo-webpack-loader works?"></a>Will we need these patterns once dojo-webpack-loader works?</h4><p>I think that it won’t be long before someone resolves the issue with dojo-webpack-loader not being able to load ArcGIS modules. That said, I think the above patterns may still prove useful. There are several other unresolved issues that indicate that it’s implementation of Dojo plugins is not complete. Furthermore, I question whether webpack can do a better job of building the ArcGIS API for JavaScript than Dojo does. More importantly, how will webpack handle the files that the are traditionally excluded from Dojo builds of the ArcGIS API and then required asynchronously at runtime? What about the CSS?</p>
+<p>It may be best to just think of the pre-built ArcGIS API for JavaScript as a special chunk that you can choose whether to load up front (with either pattern) or lazy load (with the “dedicated loader module” pattern).</p>
+<h4 id="Do-I-need-to-use-the-CDN"><a href="#Do-I-need-to-use-the-CDN" class="headerlink" title="Do I need to use the CDN?"></a>Do I need to use the CDN?</h4><p>No. While all of the above examples for each of the patterns use the CDN, you should be able to use any of the other ways to get the ArcGIS API for JavaScript such as a locally hosted Bower build or SDK download.</p>
+<h3 id="A-community-effort"><a href="#A-community-effort" class="headerlink" title="A community effort"></a>A community effort</h3><p>The ArcGIS developer community has come up with innovative solutions to the challenge of loading and consuming ArcGIS modules in Angular 2 and React applications built with webpack. In particular I’d like to thank @patrickarlt, @ScottONeal, @willisd2, @trkbrkr2000, @jwasilgeo, @Robert-W, @lobsteropteryx, @gund, @davetimmins, and @kgs916 for their contributions to the above solutions. I hope I’ve left you with a better understanding of how those solutions work and when you might want to use one or the other.</p>
+<p>I also hope to inspire you to contribute to these projects and continue to evolve these solutions. There’s still plenty of work to be done. Optimization techniques like tree shaking, code splitting, and lazy loading are still relatively new to most webpack developers. As successful patterns emerge, the ArcGIS developer community will have to figure out how to extend and/or emulate those patterns with the ArcGIS API for JavaScript.</p>
+<p>Although my name is on a lot of those repositories, I’m going to play less of a role in this community effort going forward. For almost a year now I’ve been happily developing with Ember.js, which uses broccoli.js instead of webpack. To be honest, beyond the idiosyncrasies of loading ArcGIS AMD modules I only know enough webpack, Angular 2, and React to be dangerous. Now that this community has established some base module loading patterns, and since Ember.js is the framework I use day to day, I’ll be focussing my energies on making it easier for Ember.js developers to work with the ArcGIS platform.</p>
+<blockquote>
+<p>作者：tomwayson<br>链接：<a href="http://tomwayson.com/2016/11/27/using-the-arcgis-api-for-javascript-in-applications-built-with-webpack/" target="_blank" rel="external">http://tomwayson.com/2016/11/27/using-the-arcgis-api-for-javascript-in-applications-built-with-webpack/</a><br>来源：个人博客</p>
+</blockquote>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[[转载]什么是JWT--JSON-WEB-TOKEN]]></title>
+      <url>http://dyh333.me/2016/12/25/%E8%BD%AC%E8%BD%BD-%E4%BB%80%E4%B9%88%E6%98%AFJWT-JSON-WEB-TOKEN.html</url>
+      <content type="html"><![CDATA[<h3 id="什么是JWT"><a href="#什么是JWT" class="headerlink" title="什么是JWT"></a>什么是JWT</h3><blockquote>
+<p>Json web token (JWT), 是为了在网络应用环境间传递声明而执行的一种基于JSON的开放标准（(RFC 7519).该token被设计为紧凑且安全的，特别适用于分布式站点的单点登录（SSO）场景。JWT的声明一般被用来在身份提供者和服务提供者间传递被认证的用户身份信息，以便于从资源服务器获取资源，也可以增加一些额外的其它业务逻辑所必须的声明信息，该token也可直接被用于认证，也可被加密。</p>
+</blockquote>
+<h3 id="起源"><a href="#起源" class="headerlink" title="起源"></a>起源</h3><p>说起JWT，我们应该来谈一谈基于token的认证和传统的session认证的区别。</p>
+<h3 id="传统的session认证"><a href="#传统的session认证" class="headerlink" title="传统的session认证"></a>传统的session认证</h3><p>我们知道，http协议本身是一种无状态的协议，而这就意味着如果用户向我们的应用提供了用户名和密码来进行用户认证，那么下一次请求时，用户还要再一次进行用户认证才行，因为根据http协议，我们并不能知道是哪个用户发出的请求，所以为了让我们的应用能识别是哪个用户发出的请求，我们只能在服务器存储一份用户登录的信息，这份登录信息会在响应时传递给浏览器，告诉其保存为cookie,以便下次请求时发送给我们的应用，这样我们的应用就能识别请求来自哪个用户了,这就是传统的基于session认证。</p>
+<p>但是这种基于session的认证使应用本身很难得到扩展，随着不同客户端用户的增加，独立的服务器已无法承载更多的用户，而这时候基于session认证应用的问题就会暴露出来.</p>
+<h4 id="基于session认证所显露的问题"><a href="#基于session认证所显露的问题" class="headerlink" title="基于session认证所显露的问题"></a>基于session认证所显露的问题</h4><p><strong>Session</strong>: 每个用户经过我们的应用认证之后，我们的应用都要在服务端做一次记录，以方便用户下次请求的鉴别，通常而言session都是保存在内存中，而随着认证用户的增多，服务端的开销会明显增大。</p>
+<p><strong>扩展性</strong>: 用户认证之后，服务端做认证记录，如果认证的记录被保存在内存中的话，这意味着用户下次请求还必须要请求在这台服务器上,这样才能拿到授权的资源，这样在分布式的应用上，相应的限制了负载均衡器的能力。这也意味着限制了应用的扩展能力。</p>
+<p><strong>CSRF</strong>: 因为是基于cookie来进行用户识别的, cookie如果被截获，用户就会很容易受到跨站请求伪造的攻击。</p>
+<h3 id="基于token的鉴权机制"><a href="#基于token的鉴权机制" class="headerlink" title="基于token的鉴权机制"></a>基于token的鉴权机制</h3><p>基于token的鉴权机制类似于http协议也是无状态的，它不需要在服务端去保留用户的认证信息或者会话信息。这就意味着基于token认证机制的应用不需要去考虑用户在哪一台服务器登录了，这就为应用的扩展提供了便利。</p>
+<p>流程上是这样的：</p>
+<ol>
+<li>用户使用用户名密码来请求服务器</li>
+<li>服务器进行验证用户的信息</li>
+<li>服务器通过验证发送给用户一个token</li>
+<li>客户端存储token，并在每次请求时附送上这个token值</li>
+<li>服务端验证token值，并返回数据</li>
+</ol>
+<p>这个token必须要在每次请求时传递给服务端，它应该保存在请求头里， 另外，服务端要支持CORS(跨来源资源共享)策略，一般我们在服务端这么做就可以了Access-Control-Allow-Origin: *。</p>
+<p>那么我们现在回到JWT的主题上。</p>
+<h3 id="JWT长什么样"><a href="#JWT长什么样" class="headerlink" title="JWT长什么样"></a>JWT长什么样</h3><p>JWT是由三段信息构成的，将这三段信息文本用.链接一起就构成了Jwt字符串。就像这样:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiYWRtaW4iOnRydWV9.TJVA95OrM7E2cBab30RMHrHDcEfxjoYZgeFONFh7HgQ</div></pre></td></tr></table></figure>
+<h3 id="JWT的构成"><a href="#JWT的构成" class="headerlink" title="JWT的构成"></a>JWT的构成</h3><p>第一部分我们称它为头部（header),第二部分我们称其为载荷（payload, 类似于飞机上承载的物品)，第三部分是签证（signature).</p>
+<h4 id="header"><a href="#header" class="headerlink" title="header"></a>header</h4><p>jwt的头部承载两部分信息：</p>
+<ul>
+<li>声明类型，这里是jwt</li>
+<li>声明加密的算法 通常直接使用 HMAC SHA256</li>
+</ul>
+<p>完整的头部就像下面这样的JSON：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  &apos;typ&apos;: &apos;JWT&apos;,</div><div class="line">  &apos;alg&apos;: &apos;HS256&apos;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>然后将头部进行base64加密（该加密是可以对称解密的)，构成了第一部分。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9</div></pre></td></tr></table></figure>
+<h4 id="playload"><a href="#playload" class="headerlink" title="playload"></a>playload</h4><p>载荷就是存放有效信息的地方。这个名字像是特指飞机上承载的货品，这些有效信息包含三个部分</p>
+<ul>
+<li>标准中注册的声明</li>
+<li>公共的声明</li>
+<li>私有的声明</li>
+</ul>
+<p><strong>标准中注册的声明</strong> (建议但不强制使用) ：</p>
+<ul>
+<li>iss: jwt签发者</li>
+<li>sub: jwt所面向的用户</li>
+<li>aud: 接收jwt的一方</li>
+<li>exp: jwt的过期时间，这个过期时间必须要大于签发时间</li>
+<li>nbf: 定义在什么时间之前，该jwt都是不可用的.</li>
+<li>iat: jwt的签发时间</li>
+<li>jti: jwt的唯一身份标识，主要用来作为一次性token,从而回避重放攻击。</li>
+</ul>
+<p><strong>公共的声明</strong>：<br>公共的声明可以添加任何的信息，一般添加用户的相关信息或其他业务需要的必要信息.但不建议添加敏感信息，因为该部分在客户端可解密.</p>
+<p><strong>私有的声明</strong>：<br>私有声明是提供者和消费者所共同定义的声明，一般不建议存放敏感信息，因为base64是对称解密的，意味着该部分信息可以归类为明文信息。</p>
+<p>定义一个payload：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  &quot;sub&quot;: &quot;1234567890&quot;,</div><div class="line">  &quot;name&quot;: &quot;John Doe&quot;,</div><div class="line">  &quot;admin&quot;: true</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>然后将其进行base64加密，得到Jwt的第二部分。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiYWRtaW4iOnRydWV9</div></pre></td></tr></table></figure>
+<h4 id="signature"><a href="#signature" class="headerlink" title="signature"></a>signature</h4><p>jwt的第三部分是一个签证信息，这个签证信息由三部分组成：</p>
+<ul>
+<li>header (base64后的)</li>
+<li>payload (base64后的)</li>
+<li>secret</li>
+</ul>
+<p>这个部分需要base64加密后的header和base64加密后的payload使用.连接组成的字符串，然后通过header中声明的加密方式进行加盐secret组合加密，然后就构成了jwt的第三部分。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">// javascript</div><div class="line">var encodedString = base64UrlEncode(header) + &apos;.&apos; + base64UrlEncode(payload);</div><div class="line"></div><div class="line">var signature = HMACSHA256(encodedString, &apos;secret&apos;); // TJVA95OrM7E2cBab30RMHrHDcEfxjoYZgeFONFh7HgQ</div></pre></td></tr></table></figure>
+<p>将这三部分用.连接成一个完整的字符串,构成了最终的jwt：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiYWRtaW4iOnRydWV9.TJVA95OrM7E2cBab30RMHrHDcEfxjoYZgeFONFh7HgQ</div></pre></td></tr></table></figure>
+<p><strong>注意</strong>：secret是保存在服务器端的，jwt的签发生成也是在服务器端的，secret就是用来进行jwt的签发和jwt的验证，所以，它就是你服务端的私钥，在任何场景都不应该流露出去。一旦客户端得知这个secret, 那就意味着客户端是可以自我签发jwt了。</p>
+<h3 id="如何应用"><a href="#如何应用" class="headerlink" title="如何应用"></a>如何应用</h3><p>一般是在请求头里加入Authorization，并加上Bearer标注：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">fetch(&apos;api/user/1&apos;, &#123;</div><div class="line">  headers: &#123;</div><div class="line">    &apos;Authorization&apos;: &apos;Bearer &apos; + token</div><div class="line">  &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<p>服务端会验证token，如果验证通过就会返回相应的资源。整个流程就是这样的:</p>
+<img title="jwt-diagram" alt="jwt-diagram" src="http://oi6lwj85c.bkt.clouddn.com/static/images/jwt-diagram.png">
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><h4 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h4><ul>
+<li>因为json的通用性，所以JWT是可以进行跨语言支持的，像JAVA,JavaScript,NodeJS,PHP等很多语言都可以使用。</li>
+<li>因为有了payload部分，所以JWT可以在自身存储一些其他业务逻辑所必要的非敏感信息。</li>
+<li>便于传输，jwt的构成非常简单，字节占用很小，所以它是非常便于传输的。</li>
+<li>它不需要在服务端保存会话信息, 所以它易于应用的扩展</li>
+</ul>
+<h4 id="安全相关"><a href="#安全相关" class="headerlink" title="安全相关"></a>安全相关</h4><ul>
+<li>不应该在jwt的payload部分存放敏感信息，因为该部分是客户端可解密的部分。</li>
+<li>保护好secret私钥，该私钥非常重要。</li>
+<li>如果可以，请使用https协议</li>
+</ul>
+<blockquote>
+<p>作者：Dearmadman<br>链接：<a href="http://www.jianshu.com/p/576dbf44b2ae" target="_blank" rel="external">http://www.jianshu.com/p/576dbf44b2ae</a><br>来源：简书</p>
+</blockquote>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[[转载]如何理解HTTP响应的状态码]]></title>
+      <url>http://dyh333.me/2016/12/25/%E8%BD%AC%E8%BD%BD-%E5%A6%82%E4%BD%95%E7%90%86%E8%A7%A3HTTP%E5%93%8D%E5%BA%94%E7%9A%84%E7%8A%B6%E6%80%81%E7%A0%81.html</url>
+      <content type="html"><![CDATA[<p>我们知道HTTP协议是通过HTTP请求和HTTP响应来实现双向通信的。 HTTP状态码(HTTP Status Code)是用以表示Web服务器HTTP响应状态的3位数字代码，由RFC 2616规范定义。 合理的状态码不仅可以让用户或者浏览器做出更加合适的进一步操作，而且可以让客户端代码更加易于理解和维护。</p>
+<p>HTTP状态码分为5类：1xx表示继续发送请求；2xx表示请求成功；3xx表示资源已找到但需要继续进行其他操作； 4xx表示客户端错误；5xx表示服务器错误。下面就具体详述常见状态码的语义，及其使用方式。</p>
+<blockquote>
+<p>关于HTTP协议规范以及状态码在其中的作用，参见：<a href="http://harttle.com/2014/10/01/http.html" title="读 HTTP 协议" target="_blank" rel="external">读 HTTP 协议</a>。</p>
+</blockquote>
+<h3 id="1xx"><a href="#1xx" class="headerlink" title="1xx"></a>1xx</h3><p>1xx表示请求已被接受，但需要后续处理。例如：</p>
+<h4 id="100-Continue"><a href="#100-Continue" class="headerlink" title="100(Continue)"></a><em>100(Continue)</em></h4><p>客户端应继续发送请求。</p>
+<h4 id="101-Switching-Protocols"><a href="#101-Switching-Protocols" class="headerlink" title="101(Switching Protocols)"></a><em>101(Switching Protocols)</em></h4><p>需要切换协议，服务器通过的Upgrade响应头字段通知客户端。</p>
+<p>HTML5引入的WebSocket便是这样工作的。首先客户端请求websocket所在的URL，服务器返回101，然后便建立了全双工的TCP连接。 注意Upgrade和Connection头字段属于Hop-by-hop字段，设置Websocket代理时需要继续设置这两个字段，而不是简单地转发请求。</p>
+<h3 id="2xx"><a href="#2xx" class="headerlink" title="2xx"></a>2xx</h3><p>请求已成功被服务器接收、理解、并接受。</p>
+<h4 id="200-OK"><a href="#200-OK" class="headerlink" title="200(OK)"></a><em>200(OK)</em></h4><p>请求已成功，请求所希望的响应头或数据体将随此响应返回。</p>
+<h4 id="201-Created"><a href="#201-Created" class="headerlink" title="201(Created)"></a><em>201(Created)</em></h4><p>请求已经被实现，而且有一个新的资源已经依据请求的需要而创建。在RESTFul风格的URL设计中，通常用来响应POST请求。</p>
+<h4 id="202-Accepted"><a href="#202-Accepted" class="headerlink" title="202(Accepted)"></a><em>202(Accepted)</em></h4><p>服务器已接受请求，但尚未处理。比如POST一个资源应当返回201，但由于性能原因未能立即创建，可以返回202。</p>
+<h4 id="204-No-Content"><a href="#204-No-Content" class="headerlink" title="204(No Content)"></a><em>204(No Content)</em></h4><p>服务器成功处理了请求，但不需要返回任何实体内容，204响应禁止包含任何消息体。浏览器收到该响应后不应产生文档视图的变化。</p>
+<h4 id="205-Reset-Content"><a href="#205-Reset-Content" class="headerlink" title="205(Reset Content)"></a><em>205(Reset Content)</em></h4><p>服务器成功处理了请求，但不需要返回任何实体内容，205响应禁止包含任何消息体。 与204不同的是，返回此状态码的响应要求请求者重置文档视图。比如用户刚刚提交一个表单，返回205后页面重置，用户可以立即填写下一个表单。</p>
+<h4 id="206-Partial-Content"><a href="#206-Partial-Content" class="headerlink" title="206(Partial Content)"></a><em>206(Partial Content)</em></h4><p>HTTP协议允许分片传输。请求头中包含Range字段时，响应需要只返回Range指定的那一段。响应中应包含Content-Range来指示返回内容的范围。</p>
+<h4 id="其他"><a href="#其他" class="headerlink" title="其他"></a><em>其他</em></h4><ul>
+<li>203(Non-Authoritative Information)</li>
+<li>207(Multi-Status)</li>
+</ul>
+<h3 id="3xx"><a href="#3xx" class="headerlink" title="3xx"></a>3xx</h3><p>这类状态码代表需要客户端采取进一步的操作才能完成请求。通常，这些状态码用来重定向， 重定向目标在本次响应的Location头字段中指明。</p>
+<h4 id="301-Moved-Permanently"><a href="#301-Moved-Permanently" class="headerlink" title="301(Moved Permanently)"></a><em>301(Moved Permanently)</em></h4><p>被请求的资源已永久移动到新位置，并且将来任何对此资源的引用都应该使用本响应返回的若干个URI之一。如果该请求不是GET/HEAD， 浏览器通常会要求用户确认重定向。</p>
+<p>301通常用于网站迁移时，服务器对旧的URL进行301重定向到新的URL。这样搜索引擎可以正确地更新原有的页面排名等信息。</p>
+<h4 id="302-Found"><a href="#302-Found" class="headerlink" title="302(Found)"></a><em>302(Found)</em></h4><p>请求的资源现在临时从不同的URI响应请求。除非指定了Cache-Control或Expires，否则该响应不可缓存。 如果当前请求非HEAD或GET，浏览器需取得用户确认，再进行重定向。</p>
+<blockquote>
+<p>这很好理解，因为上下文发生了变化，比如POST请求不是幂等的。</p>
+</blockquote>
+<h4 id="303-See-Other"><a href="#303-See-Other" class="headerlink" title="303(See Other)"></a><em>303(See Other)</em></h4><p>对应当前请求的响应可以在另一个URI上被找到，而且客户端应当采用GET的方式访问那个资源。 这个方法的存在主要是为了允许由脚本激活的POST请求输出重定向到一个新的资源。 303响应禁止被缓存。</p>
+<blockquote>
+<p>303会使得浏览器直接GET那个资源，不需用户同意。这是Web应用中最常见的重定向方式。</p>
+</blockquote>
+<h4 id="304-Not-Modified"><a href="#304-Not-Modified" class="headerlink" title="304(Not Modified)"></a><em>304(Not Modified)</em></h4><p>如果客户端发送了一个带条件的GET请求且该请求已被允许，而文档的内容(自上次访问以来或者根据请求的条件)并没有改变。 304响应禁止包含消息体。</p>
+<p>304响应也是一种缓存机制。Web服务器对静态资源文件通常会采取缓存，因此在Web开发中你可以看到大量的304响应。 服务器给出的相应中通常会包含Etag来标识资源ID，比如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ETag: &quot;686897696a7c876b7e&quot;</div></pre></td></tr></table></figure>
+<p>客户端在下次访问同一URL时会设置头字段If-None-Match(这是一个请求条件)：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">If-None-Match: &quot;686897696a7c876b7e&quot;</div></pre></td></tr></table></figure>
+<p>服务器返回资源前会判断Etag是否与客户端提供的If-None-Match匹配，如果匹配则说明资源未发生改变，此时应返回304。</p>
+<p><strong>关于HTTP缓存的讨论</strong></p>
+<p>除了使用ETag/If-None-Match/If-Match通过文件内容来缓存外，还可以使用Last-Modified/If-Modified-Since通过文件修改时间来进行缓存。 这两者都需要客户端再次发送HTTP请求，如果文件未发生改变，服务器返回304。</p>
+<p>而另外一种缓存策略Expires/Cache-Control则可以让客户端避免再次发送请求。一般会优先使用Cache-Control，它能够更加精细地控制缓存策略。</p>
+<h4 id="其他-1"><a href="#其他-1" class="headerlink" title="其他"></a><em>其他</em></h4><ul>
+<li>300(Multiple Choices)</li>
+<li>305(Use Proxy)</li>
+<li>307(Temporary Redirect)</li>
+</ul>
+<h3 id="4xx"><a href="#4xx" class="headerlink" title="4xx"></a>4xx</h3><p>这类的状态码代表了客户端看起来可能发生了错误，妨碍了服务器的处理。 除非响应的是一个HEAD请求，否则服务器就应该返回一个解释当前错误状况的实体。</p>
+<h4 id="400-Bad-Request"><a href="#400-Bad-Request" class="headerlink" title="400(Bad Request)"></a><em>400(Bad Request)</em></h4><p>由于包含语法错误，当前请求无法被服务器理解。400通常在服务器端表单验证失败时返回。</p>
+<h4 id="401-Unauthorized"><a href="#401-Unauthorized" class="headerlink" title="401(Unauthorized)"></a><em>401(Unauthorized)</em></h4><p>当前请求需要用户验证，响应中会包含一个WWW-Authenticate字段来询问用户的授权信息。 而客户端的下次请求需要提供包含Authorization头的请求。</p>
+<p>HTTP Basic Auth就是这样实现的。当服务器返回401时浏览器会弹出窗口：</p>
+<img title="basic-auth-2x" alt="basic-auth-2x" src="http://oi6lwj85c.bkt.clouddn.com/static/images/basic-auth-2x.png">
+<p>输入验证信息并点击确定，浏览器会根据你的输入填写Authorization头并重新发送请求。对于Basic Auth看起来是这样的：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Authorization:Basic eWFuZ2p2bjp5YW5nanZuaGFydA==</div></pre></td></tr></table></figure>
+<h4 id="403-Forbidden"><a href="#403-Forbidden" class="headerlink" title="403(Forbidden)"></a><em>403(Forbidden)</em></h4><p>服务器已经理解请求，但是拒绝执行它。与401响应不同的是，身份验证并不能提供任何帮助。</p>
+<blockquote>
+<p>403和401一样，需要在相应消息体中需要给出原因。除非是一个HEAD请求。</p>
+</blockquote>
+<p>通常用于服务器已经知道用户的身份的情况。比如从请求的Cookie得到的Session中可以得知当前用户无权进行该操作。 通常的Web应用中，对于401的情况应当重定向至登录页面，403的情况应当直接告知错误(这属于前端Bug)。</p>
+<h4 id="404-Not-Found"><a href="#404-Not-Found" class="headerlink" title="404(Not Found)"></a><em>404(Not Found)</em></h4><p>这太常见了。就是请求所希望得到的资源未被在服务器上发现。</p>
+<p>当通常用于当服务器不想揭示到底为何请求被拒绝时，比如应当返回500时服务器不愿透露自己的错误。</p>
+<h4 id="405-Method-Not-Allowed"><a href="#405-Method-Not-Allowed" class="headerlink" title="405(Method Not Allowed)"></a><em>405(Method Not Allowed)</em></h4><p>请求行中指定的请求方法不能被用于请求相应的资源。</p>
+<p>在Web开发中通常是因为客户端和服务器的方法不一致，比如客户端通过PUT来修改一个资源，而服务器把它实现为POST方法。 开发中统一规范就好了。</p>
+<h4 id="413-Request-Entity-Too-Large"><a href="#413-Request-Entity-Too-Large" class="headerlink" title="413(Request Entity Too Large)"></a><em>413(Request Entity Too Large)</em></h4><p>服务器拒绝处理当前请求，因为该请求提交的实体数据大小超过了服务器愿意或者能够处理的范围。</p>
+<p>一般的服务器都会设置HTTP请求消息体的最大长度，当然这是一种阻挡攻击的手段。 例如你在使用HTTP方式来访问Git仓库，如果你在仓库中加入了大的二进制文件(通常为目标文件或多媒体文件)， 在Push时服务器很可能会返回413错误。如果切换为ssh协议就不会有这样的问题了，服务器只能限制整个仓库的大小。</p>
+<h4 id="414-Request-URI-Too-Large"><a href="#414-Request-URI-Too-Large" class="headerlink" title="414(Request-URI Too Large)"></a><em>414(Request-URI Too Large)</em></h4><p>当URI太长时，服务器可以返回414. 当HTTP协议并未规定URI应当有多长。这取决于浏览器和服务器的设置， 在服务器中当然你想设置多长都可以，但是浏览器是你决定不了的，而且不同的厂商在采用不同的长度限制，可以认为最短的是2K：</p>
+<blockquote>
+<p>The limit is in MSIE and Safari about 2KB, in Opera about 4KB and in Firefox about 8KB, (255 bytes if we count very old browsers) .</p>
+</blockquote>
+<p>当然URI长度的这一点限制会使得HTTP GET方法的能力有限，不能传输超过2K的数据。另外因为GET方法的所有数据都体现在URI上， 对于用户是可见的。这一点不太安全。</p>
+<blockquote>
+<p>其实HTTP GET传输数据理论上并不比POST安全更多，因为POST的Entity Body也是明文传输的。只是GET的数据用户直接可见而已。</p>
+</blockquote>
+<h4 id="其他-2"><a href="#其他-2" class="headerlink" title="其他"></a><em>其他</em></h4><ul>
+<li>402(Payment Required)</li>
+<li>406(Not Acceptable)</li>
+<li>407(Proxy Authentication Required)</li>
+<li>408(Request Time-out)</li>
+<li>409(Conflict)</li>
+<li>410(Gone)</li>
+<li>411(Length Required)</li>
+<li>412(Precondition Failed)</li>
+<li>415(Unsupported Media Type)</li>
+<li>416(Requested range not satisfiable)</li>
+<li>417(Expectation Failed)</li>
+</ul>
+<h3 id="5xx"><a href="#5xx" class="headerlink" title="5xx"></a>5xx</h3><p>这类状态码代表了服务器在处理请求的过程中有错误或者异常状态发生，也有可能是服务器意识到以当前的软硬件资源无法完成对请求的处理。 并且响应消息体中应当给出理由，除非是HEAD请求。</p>
+<h4 id="500-Internal-Server-Error"><a href="#500-Internal-Server-Error" class="headerlink" title="500(Internal Server Error)"></a><em>500(Internal Server Error)</em></h4><p>通常是代码出错，后台Bug。一般的Web服务器通常会给出抛出异常的调用堆栈。 然而多数服务器即使在生产环境也会打出调用堆栈，这显然是不安全的。</p>
+<h4 id="502-Bad-Gateway"><a href="#502-Bad-Gateway" class="headerlink" title="502(Bad Gateway)"></a><em>502(Bad Gateway)</em></h4><p>作为网关或者代理工作的服务器尝试执行请求时，从上游服务器接收到无效的响应。</p>
+<p>如果你在用HTTP代理来翻墙，或者你配置了nginx来反向代理你的应用，你可能会常常看到它。</p>
+<h4 id="504-Gateway-Time-out"><a href="#504-Gateway-Time-out" class="headerlink" title="504(Gateway Time-out)"></a><em>504(Gateway Time-out)</em></h4><p>作为网关或者代理工作的服务器尝试执行请求时，未能及时从上游服务器收到响应。</p>
+<p>注意与502的区别：502是接收到了无效响应比如Connection Refused； 504是响应超时，通常是被墙了。</p>
+<p>很多国外站点都会使用CDN来Serve静态文件，但我大中华墙掉了一些CDN。导致这些资源文件的请求会一直处于Pending状态直到超时。 表现为浏览器显示空白页面，长时间处于等待状态。这时在控制台看到HTML已经载入了就可以点击停止按钮了，停止载入那些资源。 页面会立即显示出来，虽然样式和交互可能有问题。</p>
+<p>说到这里想吐槽GFW简直没有行业道德，即使不允许我们访问也返回一个错误嘛，不要让浏览器一直处于等待的状态。</p>
+<h4 id="其他-3"><a href="#其他-3" class="headerlink" title="其他"></a><em>其他</em></h4><ul>
+<li>501(Not Implemented)</li>
+<li>503(Service Unavailable)</li>
+<li>505(HTTP Version not supported)</li>
+</ul>
+<blockquote>
+<p>作者：<br>链接：<a href="http://harttle.com/2015/08/15/http-status-code.html" target="_blank" rel="external">http://harttle.com/2015/08/15/http-status-code.html</a><br>来源：个人博客</p>
+</blockquote>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[[转载]Angular2路由教程3-子模块以及异步加载]]></title>
+      <url>http://dyh333.me/2016/12/22/%E8%BD%AC%E8%BD%BD-Angular2%E8%B7%AF%E7%94%B1%E6%95%99%E7%A8%8B3-%E5%AD%90%E6%A8%A1%E5%9D%97%E4%BB%A5%E5%8F%8A%E5%BC%82%E6%AD%A5%E5%8A%A0%E8%BD%BD.html</url>
+      <content type="html"><![CDATA[<p>用Angular2开发一个大型的应用，我们通常都需要分模块进行开发。例如将某一个功能的相关页面和功能放在一个模块里面，这样既可以实现系统的松耦合，给开发和后期的维护带来很大的便利。同时，对于子模块，我们还可以使用延时加载，这样可以减少初始加载的文件的大小。在这篇文章中，我们就来看看在Angular2框架下怎么实现子模块及其延时加载。<br>可以在这里查看本文使用的实例。该实例基于上篇文章Angular2路由教程2-使用Guard和Resolve进行验证和权限控制 所用的实例，并在它基础上添加了一个lazy的模块，以及将现有的todo模块配置成延时加载方式。</p>
+<p>为了体现启用延时加载前后的包的大小变化，以及启用压缩后的变化，在这个教程里面，使用了angular-cli创建项目脚手架，并用它来进行测试和打包。有关angular-cli的使用请查看官网。在这篇文章我们使用的angular-cli的版本是1.0.0-beta.21。如果你使用的是别的版本，可能结果就会不一样。甚至有些错误，我们在最后会说明当前版本angular-cli的bug。</p>
+<h3 id="模块设计"><a href="#模块设计" class="headerlink" title="模块设计"></a>模块设计</h3><p>在开发Angular2应用时，除了之前(Angular2入门教程-2 实现TodoList App)讲到的设计方法，像组件设计、路由设计以外，对于一个较大型的应用，我们还需要设计模块。例如，将一个应用分成几个功能模块，以及有哪些公用模块。公用模块里面应该放公用的service类，例如权限验证、登录、获取用户信息、全局的错误处理、工具类等，还有封装的指令或组件。而在某一个功能模块里面，只处理这个模块里面的业务，尽量不和其他模块交互。<br>拿之前教程中的TodoList应用来说，只有home页面和2个todo页面，我们把todo相关的功能放在一个子模块里面，为了演示，又加了一个简单的名字叫lazy的模块。我们将把todo模块和lazy模块配置成延时加载的模块。</p>
+<h3 id="子模块开发"><a href="#子模块开发" class="headerlink" title="子模块开发"></a>子模块开发</h3><p>接下来再看看子模块的开发。其实在之前的例子中，就把todo相关的组件放在了一个模块里面。但是却没有强调子模块开发需要注意的地方，甚至有些配置可能没有采用子模块的方式进行配置。这里，我们就主要说明一下需要注意的地方，如果要查看完整的代码，请参考实例源代码。</p>
+<h4 id="子模块路由"><a href="#子模块路由" class="headerlink" title="子模块路由"></a>子模块路由</h4><p>首先需要注意的是路由。在之前的例子中，我们把todo相关的路由定义在一个文件中，然后在app的路由定义中把所有路由合并到一起。todo.routes.ts的内容如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">// 省略import</div><div class="line">export const TodoRoutes: Route[] = [</div><div class="line">    &#123;</div><div class="line">        path: &apos;todo&apos;,</div><div class="line">        canActivateChild: [MyTodoGuard],</div><div class="line">        children: [</div><div class="line">            &#123; path: &apos;list&apos;, component: TodoListComponent, resolve: &#123; todos: MyTodoResolver &#125; &#125;,</div><div class="line">            &#123; path: &apos;detail/:id&apos;, component: TodoDetailComponent, canDeactivate: [ CanLeaveTodoDetailGuard ] &#125;</div><div class="line">        ]</div><div class="line">    &#125;</div><div class="line">];</div></pre></td></tr></table></figure>
+<p>然后在app.routes.ts中定义一个路由模块：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">const routes: Routes = [</div><div class="line">    &#123; path: &apos;&apos;, redirectTo: &apos;/home&apos;, pathMatch: &apos;full&apos; &#125;,</div><div class="line">    &#123; path: &apos;home&apos;, component: HomeComponent &#125;,</div><div class="line">    ...TodoRoutes // 这里就是将TodoRoutes列表里的内容合并到routes</div><div class="line">];</div><div class="line">@NgModule(&#123;</div><div class="line">  imports: [ RouterModule.forRoot(routes) ],</div><div class="line">  exports: [ RouterModule ]</div><div class="line">&#125;)</div><div class="line">export class AppRoutingModule &#123; &#125;</div></pre></td></tr></table></figure>
+<p>最后，在AppModule里面引入这个路由模块。</p>
+<p>这种方式实现的路由无法实现子模块的延时加载，要实现延时加载，首先要将todo模块的路由修改成子路由模块，也就是要修改todo.routes.ts：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">// 省略import</div><div class="line">export const TodoRoutes: Route[] = [</div><div class="line">    &#123;</div><div class="line">        path: &apos;todo&apos;,</div><div class="line">        canActivateChild: [MyTodoGuard],</div><div class="line">        children: [</div><div class="line">            &#123; path: &apos;list&apos;, component: TodoListComponent, resolve: &#123; todos: MyTodoResolver &#125; &#125;,</div><div class="line">            &#123; path: &apos;detail/:id&apos;, component: TodoDetailComponent, canDeactivate: [ CanLeaveTodoDetailGuard ] &#125;</div><div class="line">        ]</div><div class="line">    &#125;</div><div class="line">];</div><div class="line">// 通过下面的方式定义了一个子路由模块</div><div class="line">@NgModule(&#123;</div><div class="line">  imports: [ RouterModule.forChild(TodoRoutes) ],</div><div class="line">  exports: [ RouterModule ]</div><div class="line">&#125;)</div><div class="line">export class TodoRoutingModule &#123; &#125;</div></pre></td></tr></table></figure>
+<p>这里，我们定义了一个子路由模块，TodoRoutingModule，它使用RouterModule.forChild(TodoRoutes)来创建。跟整个App的路由模块比较的话，主路由模块使用RouterModule.forRoot(routes)来定义。</p>
+<p>定义好了子路由模块，我们就在子模块里面引入它既可：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">// 省略import</div><div class="line">@NgModule(&#123;</div><div class="line">  imports: [CommonModule, FormsModule, TodoRoutingModule ],</div><div class="line">  declarations: [TodoListComponent, TodoDetailComponent, TodoItemComponent],</div><div class="line">  providers: [TodoService, MyTodoResolver, MyTodoGuard, CanLeaveTodoDetailGuard]</div><div class="line">&#125;)</div><div class="line">export class TodoModule &#123;&#125;</div></pre></td></tr></table></figure>
+<p>这样，我们就定义好了一个子模块。当用户打开/todo/list或/todo/detail/*时，这个子模块里面的相关页面就会展示，它也不会跟其他模块有任何交互。也就是说，进入和离开这个子模块，都是通过路由跳转实现。这个子模块也是完全独立的，可以独立开发，也可以很容易就用到其他应用里面。</p>
+<h4 id="延时加载子模块"><a href="#延时加载子模块" class="headerlink" title="延时加载子模块"></a>延时加载子模块</h4><p>下面，我们就可以通过修改路由的配置，使得todo模块实现延时加载。Angular的路由模块已经提供了loadChildren定义可以直接帮我们实现该功能。下面就是新的app路由定义：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">const routes: Routes = [</div><div class="line">    &#123; path: &apos;&apos;, redirectTo: &apos;/home&apos;, pathMatch: &apos;full&apos; &#125;,</div><div class="line">    &#123; path: &apos;home&apos;, component: HomeComponent &#125;,</div><div class="line">    &#123; path: &apos;todo&apos;, loadChildren: &apos;app/todo/todo.module#TodoModule&apos; &#125;,</div><div class="line">    &#123; path: &apos;lazy&apos;, loadChildren: &apos;app/lazy/lazy.module#LazyModule&apos; &#125;</div><div class="line">];</div><div class="line">@NgModule(&#123;</div><div class="line">  imports: [ RouterModule.forRoot(routes) ],</div><div class="line">  exports: [ RouterModule ]</div><div class="line">&#125;)</div><div class="line">export class AppRoutingModule &#123; &#125;</div></pre></td></tr></table></figure>
+<p>在这里，我们对于todo路径，交给app/todo/todo.module里面的TodoModule模块处理。而在TodoModule模块里，已经有一个子路由的定义。</p>
+<p>最后，再修改app.module.ts，保证它里面不再引入TodoModule。如此一来，我们在主模块AppModule里面，没有引入todo模块的任何组件或服务。这样就能在完全脱离TodoModule模块的情况下，运行主模块的功能。当用户打开/todo里面的url时，就加载app/todo/todo.module里面的TodoModule模块，并交由它来处理响应的url。</p>
+<p>总结一下，实现延时加载子模块，主要是要注意下面几点：</p>
+<ul>
+<li>子模块的路由用RouterModule.forChild(TodoRoutes)方式定义。</li>
+<li>主模块不要引入子模块，也不要引入子模块的任何组件或服务，否则子模块就会被打包进主模块里。</li>
+<li>只有子模块才会用到的Service在子模块的providers里面定义，如果是主模块和子模块都会用到的Service就用公用模块的方式定义。要注意这个Service的实例只能有一个。</li>
+</ul>
+<h3 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h3><p>接下来我们来看看运行的结果。（注意根据运行环境不同，文件大小会不一样）</p>
+<h4 id="不启用延时加载"><a href="#不启用延时加载" class="headerlink" title="不启用延时加载"></a>不启用延时加载</h4><p>首先，我们在app.module.ts引入TodoModule，这样todo模块不是延时加载的，只有lazy模块是延时加载的。我们使用ng serve的方式运行测试服务器，并打开页面，打开几个页面以后，网络请求如下：</p>
+<img title="lazy-dev-no" alt="lazy-dev-no" src="http://oi6lwj85c.bkt.clouddn.com/static/images/lazy-dev-no.jpg">
+<p>从图中可以看到，有一个3.4M的main的js文件，下面的1.chunk.js的lazy模块延时加载的。打包的文件确实是非常的大，因为lazy模块非常简单，只是显示了一个字符串在模板里。所以它的大小也非常小，才5.8k。</p>
+<h4 id="延时加载模式"><a href="#延时加载模式" class="headerlink" title="延时加载模式"></a>延时加载模式</h4><p>下面在把TodoModule模块从app.module.ts去掉，这样，todo模块就是延时加载的，再看一下网络请求：</p>
+<img title="lazy-dev" alt="lazy-dev" src="http://oi6lwj85c.bkt.clouddn.com/static/images/lazy-dev.jpg">
+<p>这下main文件变成了3.1M，lazy模块对应的js文件是1.chunk.js，还是5.8k，todo模块对应的文件0.chunk.js是324K。可以看见一个很简单的todo模块，里面有service, rosolver, guards, 还有3个组件，里面分别都有模块、css，虽然文件不少，但是他们的实现实际上都很小。只是一个模块的文件，在未压缩的情况下就有300多K，让我这个Angular2的忠实粉丝都无语。</p>
+<h4 id="延时加载-prod模式"><a href="#延时加载-prod模式" class="headerlink" title="延时加载-prod模式"></a>延时加载-prod模式</h4><p>一般我们在部署应用的时候，都会使用压缩、混淆、合并等方法来减少最终文件的大小。使用angular-cli工具，除了在编译的时候提供打包的功能，甚至在测试的时候，也可以启用压缩选项。我们可以运行ng serve -pro来使用prod模式来启动测试服务器。在启动的过程中，可以看到很多类似下面的日志：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">WARNING in 0.005fea95566fdabe23df.chunk.js from UglifyJs</div><div class="line">Dropping unused function scheduleMicroTask [/Users/mavlarn/mydev/blog/angular2-tutorial/angular2-routes-lazy-module-webpack/~/@angular/forms/src/facade/lang.js:21,0]</div></pre></td></tr></table></figure>
+<p>可以看出，angular-cli的prod模式下编译的时候，去除了很多不需要的代码，这就是angular的<a href="https://angular.cn/docs/ts/latest/cookbook/aot-compiler.html#!#sts=Tree Shaking" target="_blank" rel="external">Tree Shaking</a>的功能。</p>
+<p>运行以后，网络请求如下：</p>
+<img title="lazy-serve-prod" alt="lazy-serve-prod" src="http://oi6lwj85c.bkt.clouddn.com/static/images/lazy-serve-prod.jpg">
+<p>这下main文件减少到了221K，lazy模块对应的js文件是1.chunk.js，只有1.0k，todo模块对应的文件0.chunk.js是17.9K。总共大小大概是240K左右，如果再使用GZip压缩，应该可以到6，70K左右。在官方文档里提到，一个Angular2的简单实例，通过Tree Shaking、压缩、GZip，最终下载的包大小有50K。我们这个实例毕竟稍微复杂，实现了大多数的通用功能，如路由、guard、resolver、表单，也是用到了Rxjs里的Observable，所以最终压缩后能有70K左右的话，也符合官方文档的说法。</p>
+<h4 id="编译后"><a href="#编译后" class="headerlink" title="编译后"></a>编译后</h4><p>最后，我们再使用ng build –prod来看看用prod模式编译后的大小：</p>
+<img title="lazy-prod" alt="lazy-prod" src="http://oi6lwj85c.bkt.clouddn.com/static/images/lazy-prod.jpg">
+<p>结果出乎意外，main文件的大小比上面在prod模式下运行测试服务器大很多，达到800多K。应该是编译过程需要某些参数，或者是当前的angular-cli有什么bug。<br>再使用ng build –prod –aot编译，main文件的大小是446K。虽然小了一点，但是也不符合预期。</p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>先说延时加载，应该都知道可以减少第一次加载的文件的大小。特别是当某个模块使用了一些比较大第三方的js库，例如图形库等，那么，把这些模块独立出来，使用延时加载的方式，可以大大减少首次加载的时间。对于Angular2的应用来说，如果我们要定义Component，就从@angular/core里面引入Component，需要定义路由就从@angular/router里面引入`Router。所以，只要我们设计好了整个App的模块、组件、路由，我们就可以利用延时加载的功能使得首页文件尽可能的小。</p>
+<p>使用模块化的开发，也能给我们的开发和维护带来很大的便利，项目越大越大，模块化和组件化带来的便利就越明显。</p>
+<blockquote>
+<p>作者：codin.im<br>链接：<a href="http://codin.im/2016/12/08/angular2-route-3-sub-module-lazyload/" target="_blank" rel="external">http://codin.im/2016/12/08/angular2-route-3-sub-module-lazyload/</a><br>来源：个人博客</p>
+</blockquote>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[[转载]不要把Rx用成Promise]]></title>
+      <url>http://dyh333.me/2016/12/15/%E8%BD%AC%E8%BD%BD-%E4%B8%8D%E8%A6%81%E6%8A%8ARx%E7%94%A8%E6%88%90Promise.html</url>
+      <content type="html"><![CDATA[<p>&emsp;&emsp;Promise这个概念在JS开发者里可谓是深入人心，从最早的Promise/A提出，到后来ES6规范的发布，Promise已经到处开花了，使用者主要是用它来避免callback hell，而后配合generate function，更是可以玩出这样的花样：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="string">'use strict'</span>;</div><div class="line">const next = (gen,val) =&gt; &#123;</div><div class="line">     const n = gen.next(val);</div><div class="line">     !n.done &amp;&amp; Promise.resolve(n.value).then(d=&gt;next(gen,d));</div><div class="line"> &#125;</div><div class="line">const run = genfunc =&gt; next(genfunc());</div><div class="line">const sleep = time=&gt;new Promise(resolve=&gt;<span class="built_in">set</span>Timeout(resolve,time));</div><div class="line">run(<span class="keyword">function</span>* ()&#123;</div><div class="line">    <span class="keyword">for</span>(<span class="built_in">let</span> i=0;i&lt;10;i++)&#123;</div><div class="line">        <span class="built_in">let</span> ret = yield fetch(<span class="string">"/url/"</span>+i).then(res=&gt;res.text());</div><div class="line">        console.log(ret);</div><div class="line">        yield sleep(1000);</div><div class="line">    &#125; </div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<p>&emsp;&emsp;写起来很清晰，而且ES2016可能有的async关键字也是依赖于Promise，所以Promise已经成了现代JS开发必须要用的特性了。</p>
+<p>&emsp;&emsp;而在其他环境下，比如说android/ios开发的情景下，同样是有大量的callback回调，因为传统app开发无可避免的涉及到 响应事件/网络请求/定时器等等需要异步回调的需求，为了避免callback hell，所以业界也很快接受了Rx这种模式，android那边有RxJava/RxAndroid，ios这边有RxSwift等。</p>
+<p>&emsp;&emsp;比如说在android上，使用RxJava进行网络请求</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">@OnClick(R.id.btn)</div><div class="line">void onClick()&#123;</div><div class="line">    getApi().</div><div class="line">        .subscribeOn(Schedulers.newThread())</div><div class="line">        .observeOn(AndroidSchedulers.mainThread())</div><div class="line">        .subscribe(result-&gt;&#123;</div><div class="line">            // do something</div><div class="line">        &#125;)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>&emsp;&emsp;粗略一看，大概会以为它是另外一种形式的Promise，同样是避免callback hell，同样是链式调用，然而事实上Promise和Rx是两种截然不同的模式，不能混为一谈。</p>
+<p>&emsp;&emsp;1. Promise顾名思义，提供的是一个允诺，这个允诺就是在调用then之后，它会在未来某个时间段把异步得到的result/error传给then里的函数。</p>
+<p>&emsp;&emsp;Rx不是允诺，它本质上还是由订阅/发布模式引出来的，它的核心思想就是数据响应式，源头是数据产生者，经过一系列的变换/过滤/合并的操作，被数据消费者所使用，数据消费者何时响应，完全取决于数据流何时能流下来。</p>
+<p>&emsp;&emsp;2. Promise需要调用then或者catch才能够执行，catch是另一种形式的then，调用then或者catch之后，它返回一个新的Promise，这样新的Promise也可以同样被调用，所以可以做成无限的then链。</p>
+<p>&emsp;&emsp;Rx的数据是否流出不取决于是否subscribe，也就是说一个observable在未被订阅的时候也可以流出数据，在之后它被订阅过后，先前的数据是无法被数据消费者所查知，所以Rx还引入了一个lazy模式，允许数据缓存着直到被subscribe，但是数据是否流出还是并不依赖subscribe。</p>
+<p>&emsp;&emsp;Rx的observable被subscribe之后，并不是继续返回一个新的observable，而是返回一个subscriber，这样用来取消订阅，但是这也导致了链式断裂，所以它不能像Promise那样组成无限then链。</p>
+<p>&emsp;&emsp;3. Promise的数据是一次性流出的，因为Promise内部维持着状态，初始化的pending，转成resolved或者rejected之后，状态就不可逆转了。</p>
+<p>&emsp;&emsp;举例说promise().then(A).then(B).then(C).catch(D)，数据是顺着链以此传播，但是只有一次，数据从A到B之后，A这个promise的状态发生了改变，从pedding转成了resolved，那么它就不可能再产生内容了，所以这个promise已经不是活动性的了。</p>
+<p>&emsp;&emsp;而Rx则不同，我们从Rx的接口就可以知道，它有onNext，onComplete和onError，onNext可以响应无数次，这也是符合我们对数据响应式的理解，数据在源头被隔三差五的发出，只要源头认为没有流尽（onComplete）或者出了问题（onError），那么数据就可以不断的流到响应者那边。</p>
+<p>&emsp;&emsp;举例来说，我们响应一个按钮的点击事件，那么我们可以把这个事件抽象为一个数据流，只要按钮还在，那么我们就认为它是可以产生数据的。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">Rx.Observable.fromEvent(btn, &apos;click&apos;)</div><div class="line">    .map(() =&gt; input.value)</div><div class="line">    .filter(text =&gt; !!text)</div><div class="line">    .distinctUntilChanged()</div><div class="line">    .flatMapLatest(Rx.Observable.fromPromise(fetch(&quot;/&quot;).then(res=&gt;res.text()))</div><div class="line">    .subscribe(value=&gt;&#123;</div><div class="line">        input.value = value;</div><div class="line">    &#125;);</div></pre></td></tr></table></figure>
+<p>&emsp;&emsp;再比如说定时器，我们可以把一个每三秒执行一项复杂的操作抽象成源头是定时器的操作，比如这样</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">Rx.Observable.timer(0,3000)</div><div class="line">             .timeInterval()</div><div class="line">             .flatMapLatest()</div><div class="line">             .subscrbe(value=&gt;&#123;</div><div class="line">             &#125;)</div></pre></td></tr></table></figure>
+<p>&emsp;&emsp;在这里面，数据是流动的，是活的，而不是像Promise那样交给下一个then之后，自己就死了，这种差别需要格外注意。</p>
+<p>&emsp;&emsp;4. Promise用then链来处理数据，包括对数据进行过滤、合并、变换等操作，它没有真正意义上的数据消费者，then链的每一个都是数据消费者，所以它非常适合组装流程式，也就是说A完成之后做B，然后B完成后去完成C这种流程，这些流程可以无穷无尽，没有底的。</p>
+<p>&emsp;&emsp;Rx有数据产生的源头和严格意义的数据消费者，数据可以在中间的操作符里被处理，比如说做过滤，做合并，做节流，变换成新的数据源头等等，可以把它想象成一个完整的数据链，有头也有尾，到了最终消费者那边这个数据流就算到底。</p>
+<p>&emsp;&emsp;5. Promise的状态发生改变后，我们如果再想重新从源头开始的话，就需要在后续then链递归最开始的那一步，因为后续者是新的promise，无法感知源头的那个Promise。</p>
+<p>&emsp;&emsp;而Rx的observable可以感知源头，它有类似于retry、repeat这种重新开始的运算符，我们可以很方便的链式调用它，而不需要封装成函数再递归。</p>
+<p>&emsp;&emsp;6. Promise的then链里面，每一行都是同样的角色，也就是Promise，所以它既可以是源头，也可以是数据处理者。</p>
+<p>&emsp;&emsp;Rx这边的observable还有一些变种，比如说常用的subject，它可以充当双面角色，可以订阅也可以发消息，这样的话我们还可以用它来做很多封装的工作。</p>
+<p>&emsp;&emsp;所以Promise和Rx这两个模式的思想差别很清晰，一个是流程式，一个是数据响应式，Promise可以用来贯串一连串单一的流程，而且这个流程是可以无限的，而Rx是用一个数据流来贯串所有操作符，它有一个真正意义上的数据消费者。</p>
+<p>&emsp;&emsp;我们在哪些场景下用Rx比较方便？首先是需要源源不断的流出数据的场景，因为Promise是一次性的，不适合做这类工作。</p>
+<p>&emsp;&emsp;比如说把事件/定时器抽象成Rx的Observable更合适，事件可以响应很多次，定时器也可以响应很多次，我们还可以利用Rx的debounce运算符来进行节流，在频繁触发事件的时候过滤那些重复的。</p>
+<p>&emsp;&emsp;其次是可能需要重试的场景，由于Rx有retry或者repeat这种从源头开始的运算符，我们可以用它来执行比如“出错后重试三次”之类动作，而Promise就需要你递归处理了，破坏了then的链式。</p>
+<p>&emsp;&emsp;而Promise也有一些优于Rx的场景，比如最开始我们举例的那个结合generate function做的yield自动调用，Promise的链式是无穷的，所以适合这类流程式的工作，async关键字依赖Promise也是正确之举。</p>
+<p>&emsp;&emsp;还有就是那些一次性的工作，比如说我们请求http api，在得到数据之后response socket就会关闭，这个时候不会有第二次的数据流动，这就是一次性的数据流动，Promise就可以完成的很好。</p>
+<p>&emsp;&emsp;这两种模式都有自己的想法，所以在使用Rx的时候，不要把它当成Promise来用，记住它的本质是数据响应。</p>
+<blockquote>
+<p>作者：李引证<br>链接：<a href="https://zhuanlan.zhihu.com/p/20531896" target="_blank" rel="external">https://zhuanlan.zhihu.com/p/20531896</a><br>来源：知乎</p>
+</blockquote>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[苏轼]]></title>
+      <url>http://dyh333.me/2016/12/14/%E8%8B%8F%E8%BD%BC.html</url>
+      <content type="html"><![CDATA[<p>苏轼（1037－1101），北宋文学家、书画家、美食家。字子瞻，号东坡居士。汉族，四川人，葬于颍昌（今河南省平顶山市郏县）。一生仕途坎坷，学识渊博，天资极高，诗文书画皆精。其文汪洋恣肆，明白畅达，与欧阳修并称欧苏，为“唐宋八大家”之一；诗清新豪健，善用夸张、比喻，艺术表现独具风格，与黄庭坚并称苏黄；词开豪放一派，对后世有巨大影响，与辛弃疾并称苏辛；书法擅长行书、楷书，能自创新意，用笔丰腴跌宕，有天真烂漫之趣，与黄庭坚、米芾、蔡襄并称宋四家；画学文同，论画主张神似，提倡“士人画”。著有《苏东坡全集》和《东坡乐府》等。</p>
+<img title="苏轼画像" alt="苏轼画像" src="http://oi6lwj85c.bkt.clouddn.com/static/images/sushi.jpg">
+<h3 id="念奴娇·赤壁怀古"><a href="#念奴娇·赤壁怀古" class="headerlink" title="念奴娇·赤壁怀古"></a>念奴娇·赤壁怀古</h3><blockquote><p>大江东去，浪淘尽，千古风流人物。<br>故垒西边，人道是，三国周郎赤壁。<br>乱石穿空，惊涛拍岸，卷起千堆雪。<br>江山如画，一时多少豪杰。<br>遥想公瑾当年，小乔初嫁了，雄姿英发。<br>羽扇纶巾，谈笑间，樯橹灰飞烟灭。<br>故国神游，多情应笑我，早生华发。<br>人生如梦，一尊还酹(lèi)江月。</p>
+</blockquote>
+<h3 id="西江月·世事一场大梦"><a href="#西江月·世事一场大梦" class="headerlink" title="西江月·世事一场大梦"></a>西江月·世事一场大梦</h3><blockquote><p><strong>世事一场大梦，人生几度秋凉？</strong>夜来风叶已鸣廊，看取眉头鬓上。<br>酒贱常愁客少，月明多被云妨。中秋谁与共孤光，把盏凄然北望。</p>
+</blockquote>
+<h3 id="如梦令·有寄"><a href="#如梦令·有寄" class="headerlink" title="如梦令·有寄"></a>如梦令·有寄</h3><blockquote><p>为向东坡传语。人在玉堂深处。别后有谁来，雪压小桥无路。<strong>归去。归去。江上一犁春雨。</strong></p>
+</blockquote>
+<h3 id="观潮"><a href="#观潮" class="headerlink" title="观潮"></a>观潮</h3><blockquote><p>庐山烟雨浙江潮，未到千般恨不消。<br>到得还来别无事，庐山烟雨浙江潮。</p>
+</blockquote>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Hello World]]></title>
+      <url>http://dyh333.me/2016/12/12/hello-world.html</url>
+      <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+]]></content>
+    </entry>
+    
+  
+  
+</search>

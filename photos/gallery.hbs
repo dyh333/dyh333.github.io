@@ -1,0 +1,13 @@
+{{#each galleries}}
+<h2>{{title}}</h2>
+<div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+    {{#each photos}}
+    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="http://oi6lwj85c.bkt.clouddn.com/{{src}}" itemprop="contentUrl" data-size="{{size}}">
+            <img src="http://oi6lwj85c.bkt.clouddn.com/{{src}}" itemprop="thumbnail" alt={{src}} />
+        </a>
+        <figcaption itemprop="caption description">{{caption}}</figcaption>                                 
+    </figure>
+    {{/each}}
+</div>
+{{/each}}
