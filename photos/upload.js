@@ -92,7 +92,7 @@ function readDirSync(dirPath){
 }
 
 function writeToFile(){
-	fs.writeFile("./galleries.json", "utf8", JSON.stringify(exportObj, null, "\t"));
+	fs.writeFile("./galleries.json", JSON.stringify(exportObj, null, "\t"));
 }
 
 readDirSync(path);

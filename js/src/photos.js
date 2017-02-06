@@ -13,7 +13,7 @@ $(function () {
 function getTemplate(name, data){
     var d=$.Deferred();
 
-    $.get('/photos/'+name+'.hbs', function(response){
+    $.get('/photos/'+name+'.txt', function(response){
         var template = Handlebars.compile(response);
         d.resolve(template(data))
     });
