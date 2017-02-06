@@ -11,7 +11,7 @@ $(function () {
 function getTemplate(name, data){
     var d=$.Deferred();
 
-    $.get('/books/'+name+'.hbs', function(response){
+    $.get('/books/'+name+'.txt', function(response){
         var template = Handlebars.compile(response);
         d.resolve(template(data))
     });

@@ -1,0 +1,35 @@
+<h2>在读({{reading.length}}本)</h2>
+<div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+    {{#each reading}}
+    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="https://book.douban.com/subject/{{id}}" target="_blank" itemprop="contentUrl">
+            <img src="{{image}}" itemprop="thumbnail" alt={{title}} />
+        </a>               
+        <figcaption itemprop="caption description">{{title}}</figcaption>               
+    </figure>
+    {{/each}}
+</div>
+
+<h2>想读({{wish.length}}本)</h2>
+<div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+    {{#each wish}}
+    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="https://book.douban.com/subject/{{id}}" target="_blank" itemprop="contentUrl">
+            <img src="{{image}}" itemprop="thumbnail" alt={{title}} />
+        </a>               
+        <figcaption itemprop="caption description">{{title}}</figcaption>               
+    </figure>
+    {{/each}}
+</div>
+
+<h2>读过({{read.length}}本)</h2>
+<div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+    {{#each read}}
+    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="https://book.douban.com/subject/{{id}}" target="_blank" itemprop="contentUrl">
+            <img src="{{image}}" itemprop="thumbnail" alt={{title}} />
+        </a>               
+        <figcaption itemprop="caption description">{{title}}</figcaption>               
+    </figure>
+    {{/each}}
+</div>
