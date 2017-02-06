@@ -1,6 +1,7 @@
 $(function () {
 	$.getJSON("/photos/galleries.json", function (galleries) {
         getTemplate('gallery', galleries).done(function(data){
+            console.log(data);
             $('.galleries').append(data);
 
             // execute above function
