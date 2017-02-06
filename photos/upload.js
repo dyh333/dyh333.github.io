@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = "../../photos";
 var qiniu = require("qiniu");
-
+var _ = require('lodash');
 
 //需要填写你的 Access Key 和 Secret Key
 qiniu.conf.ACCESS_KEY = '5AiqqOKwtMtW2bWkudFUwu0xlCQoywJIkc34c3bY';
@@ -10,14 +10,27 @@ qiniu.conf.SECRET_KEY = 'GBn7CmZU51Klo-rP7jTJ-tRQ4Cx66liTODITOgJJ';
 //要上传的空间
 bucket = 'hexo-blog';
 
+// 导出对象
+exportObj = new Object();
+exportObj.galleries = [];
+
+function Gallery(title) {
+	this.title = title;
+	this.date = '';
+	this.photos = new Array();
+}
+
+function Photo(src){
+	this.src = src;
+	this.size = '';
+	this.caption = '';
+}
 
 //构建上传策略函数
 function uptoken(bucket, key) {
   var putPolicy = new qiniu.rs.PutPolicy(bucket+":"+key);
   return putPolicy.token();
 }
-
-
 
 //构造上传函数
 function uploadFile(uptoken, key, localFile) {
@@ -48,39 +61,40 @@ function getFilenameSuffix(file_name) {
 	return result == null ? null : (result + "").toLowerCase();
 }
 
+function readDirSync(dirPath){
+	fs.readdirSync(dirPath).forEach(function(file) {
+		var stats = fs.statSync(dirPath + "/" + file);
 
-fs.readdir(path, function (err, files) {
-	if (err) {
-		return;
-	}
-	var arr = [];
-	(function iterator(index) {
-		if (index == files.length) {
-			fs.writeFile("./output.json", JSON.stringify(arr, null, "\t"));
-			return;
-		}
-
-		fs.stat(path + "/" + files[index], function (err, stats) {
-			if (err) {
-				return;
-			}
-			if (stats.isFile()) {
-			  var suffix = getFilenameSuffix(files[index]);
-			  if(!(suffix=='.js'|| suffix == '.DS_Store')){
+		if (stats.isFile()) {
+			var suffix = getFilenameSuffix(file);
+			if(suffix=='.jpg'){
 				//要上传文件的本地路径
-				filePath = path+'/'+files[index];
-				console.log('抓取到文件: '+files[index]);
+				var filePath = dirPath+'/'+file;
+				var fileDir = _.last(_.split(dirPath, '/'));
+
 				//上传到七牛后保存的文件名
-				key = files[index];
+				key = file;
 				//生成上传 Token
 				token = uptoken(bucket, key);
 				// 异步执行
 				uploadFile(token, key, filePath);
-				arr.push(files[index]);
-			}
 
-					  }
-			iterator(index + 1);
-		})
-	}(0));
-});
+				var gallery = _.find(exportObj.galleries, function(o) { return o.title === fileDir; });
+				gallery.photos.push(new Photo(file));
+			}
+		} else if(stats.isDirectory()) {
+			var gallery = new Gallery(file);
+			exportObj.galleries.push(gallery);
+
+			readDirSync(dirPath + "/" + file);
+		}
+	});
+}
+
+function writeToFile(){
+	fs.writeFile("./galleries.json", JSON.stringify(exportObj, null, "\t"));
+}
+
+readDirSync(path);
+
+writeToFile();
